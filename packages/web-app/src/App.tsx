@@ -1,11 +1,9 @@
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
+
+import "./shared/lang";
 
 export default function App() {
   const { t } = useTranslation();
 
-  return (
-    <>
-      { t('greetings') }
-    </>
-  )
+  return <p>{t("greetings")}</p>;
 }
