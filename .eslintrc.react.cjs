@@ -4,15 +4,15 @@ module.exports = {
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
     'plugin:jsx-a11y/recommended',
-    './.eslintrc.cjs'
+    './.eslintrc.cjs',
   ],
   plugins: ['react-refresh'],
   settings: {
     react: {
       version: 'detect',
-    }
+    },
   },
   rules: {
     'react-refresh/only-export-components': 'warn',
   },
-}
+};

@@ -1,5 +1,5 @@
 module.exports = {
-  env: { browser: true, es2020: true },
+  env: { browser: true, es2020: true, node: true },
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
@@ -11,24 +11,15 @@ module.exports = {
   settings: {
     'import/resolver': {
       typescript: true,
-      node: true
-    }
+      node: true,
+    },
   },
   rules: {
-    "import/order": [
-      "error",
+    'import/order': [
+      'error',
       {
-        "groups": [
-          "builtin",
-          "external",
-          "internal",
-          "parent",
-          "sibling",
-          "index",
-          "object",
-          "type"
-        ]
-      }
-    ]
-  }
-}
+        groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object', 'type'],
+      },
+    ],
+  },
+};

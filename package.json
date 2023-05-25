@@ -4,7 +4,8 @@
   "license": "MIT",
   "scripts": {
     "prepare": "husky install",
-    "commitlint": "commitlint --edit $1"
+    "commitlint": "commitlint --edit $1",
+    "prettier:check": "prettier --check ."
   },
   "private": true,
   "devDependencies": {

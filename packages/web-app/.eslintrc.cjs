@@ -1,7 +1,5 @@
 module.exports = {
-  extends: [
-    '../../.eslintrc.react.cjs'
-  ],
+  extends: ['../../.eslintrc.react.cjs'],
   settings: {
     'import/resolver': {
       node: {
@@ -9,5 +7,5 @@ module.exports = {
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
       },
     },
-  }
-}
+  },
+};
