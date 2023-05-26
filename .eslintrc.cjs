@@ -21,5 +21,6 @@ module.exports = {
         groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object', 'type'],
       },
     ],
+    '@typescript-eslint/no-unused-vars': 'error',
   },
 };

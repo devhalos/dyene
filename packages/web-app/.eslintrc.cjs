@@ -8,4 +8,9 @@ module.exports = {
       },
     },
   },
+  overrides: [
+    {
+      files: ['*.tsx', '*.ts'],
+    },
+  ],
 };
