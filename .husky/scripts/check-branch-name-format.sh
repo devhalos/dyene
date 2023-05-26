@@ -2,7 +2,7 @@
 
 branch_pattern="^(feat|fix)/[a-z]*-[0-9]*-[a-z0-9-]*$"
 
-npm run branch-name:check "$branch_pattern" --ignore main
+npx enforce-branch-name "$branch_pattern" --ignore main
 result=$?
 
 if [ $result -eq 0 ]; then

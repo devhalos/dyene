@@ -5,5 +5,6 @@ import './shared/lang';
 export default function App() {
   const { t } = useTranslation();
 
-  return <p>{t('greetings')}</p>;
+  return <p>
+    {t('greetings')}</p>;
 }
