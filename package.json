@@ -5,7 +5,8 @@
   "scripts": {
     "prepare": "husky install",
     "commitlint": "commitlint --edit $1",
-    "prettier:check": "prettier --check ."
+    "prettier:check": "prettier --check .",
+    "branch-name:check": "enforce-branch-name"
   },
   "private": true,
   "devDependencies": {
@@ -15,6 +16,7 @@
     "@tsconfig/strictest": "^2.0.1",
     "@typescript-eslint/eslint-plugin": "^5.59.2",
     "@typescript-eslint/parser": "^5.59.2",
+    "enforce-branch-name": "^1.1.2",
     "eslint": "^8.40.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-import": "^2.27.5",

@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+sh ./.husky/scripts/check-branch-updated.sh
+sh ./.husky/scripts/check-branch-name-format.sh
