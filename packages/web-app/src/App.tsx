@@ -1,11 +1,6 @@
-import { useTranslation } from 'react-i18next';
+import AppRouter from './AppRouter';
+import './common/lang';
 
 export default function App() {
-  const { t } = useTranslation();
-
-  return (
-    <>
-      { t('greetings') }
-    </>
-  )
+  return <AppRouter />;
 }
