@@ -4,6 +4,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:import/recommended',
+    'plugin:storybook/recommended',
     'eslint-config-prettier',
   ],
   parser: '@typescript-eslint/parser',
@@ -18,7 +19,7 @@ module.exports = {
     'import/order': [
       'error',
       {
-        groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object', 'type'],
+        groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
       },
     ],
     '@typescript-eslint/no-unused-vars': 'error',
