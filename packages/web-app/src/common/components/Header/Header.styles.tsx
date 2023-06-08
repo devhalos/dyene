@@ -33,6 +33,7 @@ export const MenuButton = (props: MenuButtonProps) => {
   return (
     <ChakraMenuButton
       as={Button}
+      aria-label='navigation menu'
       variant='ghost'
       color='white'
       _hover={hoverProps}

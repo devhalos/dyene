@@ -9,9 +9,10 @@
     "preview": "vite preview",
     "lint": "eslint .",
     "type-check": "tsc",
-    "test:unit": "echo 'no tests found'",
+    "test-unit": "echo 'no tests found'",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "storybook-test": "test-storybook",
+    "storybook-build": "storybook build"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.7.0",
