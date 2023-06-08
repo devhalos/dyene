@@ -1,28 +1,22 @@
 import { Meta, StoryObj } from '@storybook/react';
-import Logo from './Logo';
+import LogoComponent from './Logo';
 
-const meta: Meta<typeof Logo> = {
-  title: 'Logo',
-  component: Logo,
+const colorArgType = {
+  control: 'color',
+};
+
+const meta: Meta<typeof LogoComponent> = {
+  title: 'Common/Logo',
+  tags: ['autodocs'],
+  component: LogoComponent,
+  argTypes: {
+    colorLightning: colorArgType,
+    colorLetter: colorArgType,
+  },
 };
 
 export default meta;
 
-type Story = StoryObj<typeof Logo>;
+type Story = StoryObj<typeof LogoComponent>;
 
-export const Default: Story = {
-  render: () => <Logo />,
-};
-
-export const Light: Story = {
-  render: () => <Logo colorLetter='#eee' />,
-};
-
-export const CustomSize: Story = {
-  render: () => (
-    <Logo
-      width={128}
-      height={128}
-    />
-  ),
-};
+export const Logo: Story = {};

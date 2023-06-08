@@ -11,6 +11,7 @@ const config = {
   },
   docs: {
     autodocs: 'tag',
+    defaultName: 'Documentation',
   },
 };
 

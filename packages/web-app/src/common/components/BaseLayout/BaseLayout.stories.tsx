@@ -1,22 +1,18 @@
 import { Meta, StoryObj } from '@storybook/react';
-import AppTheme from '../../../AppTheme';
-import BaseLayout from './BaseLayout';
+import BaseLayoutComponent from './BaseLayout';
 
-const meta: Meta<typeof BaseLayout> = {
-  title: 'BaseLayout',
-  component: BaseLayout,
+const meta: Meta<typeof BaseLayoutComponent> = {
+  title: 'Common/BaseLayout',
+  tags: ['autodocs'],
+  component: BaseLayoutComponent,
 };
 
 export default meta;
 
-type Story = StoryObj<typeof BaseLayout>;
+type Story = StoryObj<typeof BaseLayoutComponent>;
 
-export const Default: Story = {
-  render: () => (
-    <AppTheme>
-      <BaseLayout>
-        <p>Content</p>
-      </BaseLayout>
-    </AppTheme>
-  ),
+export const BaseLayout: Story = {
+  args: {
+    children: 'Content',
+  },
 };

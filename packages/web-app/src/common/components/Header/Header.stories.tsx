@@ -1,20 +1,14 @@
 import { Meta, StoryObj } from '@storybook/react';
-import AppTheme from '../../../AppTheme';
-import Header from './Header';
+import HeaderComponent from './Header';
 
-const meta: Meta<typeof Header> = {
-  title: 'Header',
-  component: Header,
+const meta: Meta<typeof HeaderComponent> = {
+  title: 'Common/Header',
+  tags: ['autodocs'],
+  component: HeaderComponent,
 };
 
 export default meta;
 
-type Story = StoryObj<typeof Header>;
+type Story = StoryObj<typeof HeaderComponent>;
 
-export const Default: Story = {
-  render: () => (
-    <AppTheme>
-      <Header />
-    </AppTheme>
-  ),
-};
+export const Header: Story = {};

@@ -1,20 +1,18 @@
 export type LogoProps = {
-  width?: number;
-  height?: number;
+  size?: number;
   colorLightning?: string;
   colorLetter?: string;
 };
 
 export default function Logo({
-  width = 25,
-  height = 25,
+  size = 25,
   colorLightning = '#FFCC00',
   colorLetter = '#1A232B',
 }: LogoProps) {
   return (
     <svg
-      width={width}
-      height={height}
+      width={size}
+      height={size}
       viewBox='0 0 400 400'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
