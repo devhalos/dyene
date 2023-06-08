@@ -2,7 +2,7 @@ import {
   Button,
   Flex,
   Heading,
-  MenuButton,
+  MenuButton as ChakraMenuButton,
   FlexProps,
   HeadingProps,
   MenuButtonProps,
@@ -27,11 +27,11 @@ export const Title = (props: HeadingProps) => (
   />
 );
 
-export const StyledMenuButton = (props: MenuButtonProps) => {
+export const MenuButton = (props: MenuButtonProps) => {
   const hoverProps: MenuButtonProps = { bg: 'blackAlpha.500' };
 
   return (
-    <MenuButton
+    <ChakraMenuButton
       as={Button}
       variant='ghost'
       color='white'

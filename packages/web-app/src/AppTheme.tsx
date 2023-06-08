@@ -1,8 +1,8 @@
 import { ChakraProvider } from '@chakra-ui/react';
+import { ReactNode } from 'react';
 
 export type AppThemeProps = {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  children: any;
+  children: ReactNode;
 };
 
 export default function AppTheme({ children }: AppThemeProps) {

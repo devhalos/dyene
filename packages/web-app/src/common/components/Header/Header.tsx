@@ -1,7 +1,7 @@
 import { Center, Spacer, MenuItem, MenuList, Menu } from '@chakra-ui/react';
 import { FaEllipsisV } from 'react-icons/fa';
-import Logo from '../Logo';
-import { AppBar, StyledMenuButton, Title } from './Header.styles';
+import Logo from '../Logo/Logo';
+import { AppBar, MenuButton, Title } from './Header.styles';
 
 export default function Header() {
   return (
@@ -12,9 +12,9 @@ export default function Header() {
       </Center>
       <Spacer />
       <Menu>
-        <StyledMenuButton>
+        <MenuButton>
           <FaEllipsisV />
-        </StyledMenuButton>
+        </MenuButton>
         <MenuList>
           <MenuItem>Categories</MenuItem>
           <MenuItem>Preferences</MenuItem>
