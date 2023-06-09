@@ -3,14 +3,14 @@ module.exports = {
   settings: {
     'import/resolver': {
       node: {
-        paths: ['src'],
+        paths: ['src', '.storybook'],
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
       },
     },
   },
   overrides: [
     {
-      files: ['*.tsx', '*.ts'],
+      files: ['*.tsx', '*.ts', '*.cjs', '*.js'],
     },
   ],
 };

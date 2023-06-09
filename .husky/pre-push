@@ -4,4 +4,4 @@
 sh ./.husky/scripts/check-branch-updated.sh
 sh ./.husky/scripts/check-branch-name-format.sh
 
-npx nx affected -t build test:unit
+npx nx affected -t build test-unit

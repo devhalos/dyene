@@ -1,6 +1,11 @@
 import AppRouter from './AppRouter';
 import './common/lang';
+import AppTheme from './AppTheme';
 
 export default function App() {
-  return <AppRouter />;
+  return (
+    <AppTheme>
+      <AppRouter />;
+    </AppTheme>
+  );
 }
