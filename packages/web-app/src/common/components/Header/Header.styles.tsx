@@ -20,7 +20,6 @@ export const Title = (props: HeadingProps) => (
   <Heading
     as='h1'
     size='md'
-    fontWeight={500}
     marginLeft='0.5rem'
     color='white'
     {...props}
