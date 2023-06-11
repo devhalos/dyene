@@ -13,6 +13,8 @@
   "targetDefaults": {
     "build": {
       "dependsOn": ["^build"]
-    }
+    },
+    "test-unit": {},
+    "storybook-test": {}
   }
 }
