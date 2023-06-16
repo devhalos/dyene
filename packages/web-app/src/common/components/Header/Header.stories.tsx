@@ -33,7 +33,7 @@ export const ShowMenu: Story = {
 
     userEvent.click(menuButton);
 
-    await expect(canvas.getByText('Categories')).toBeInTheDocument();
-    await expect(canvas.getByText('Preferences')).toBeInTheDocument();
+    expect(await canvas.findByText('Categories')).toBeInTheDocument();
+    expect(await canvas.findByText('Preferences')).toBeInTheDocument();
   },
 };

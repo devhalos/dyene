@@ -1,3 +1,8 @@
 {
-  "greetings": "hello world"
+  "categories": "Categories",
+  "preferences": "Preferences",
+  "categoryList": {
+    "title": "Generate Sprint Name",
+    "hoverTitle": "Choose a Category"
+  }
 }

@@ -1,4 +1,4 @@
-import { Box, Flex } from '@chakra-ui/react';
+import { Flex } from '@chakra-ui/react';
 import { ReactNode } from 'react';
 import Header from '../Header';
 
@@ -9,17 +9,21 @@ export type BaseLayoutProps = {
 export default function BaseLayout({ children }: BaseLayoutProps) {
   return (
     <Flex
-      flexDirection='column'
+      as='article'
       height='100vh'
-      overflow='hidden'
+      direction='column'
+      // TODO: move color to theme config
+      background='#F3F8F2'
+      className='base-layout'
     >
       <Header />
-      <Box
-        flex='1'
-        overflow='auto'
+      <Flex
+        flex={1}
+        overflow='hidden'
+        className='container'
       >
         {children}
-      </Box>
+      </Flex>
     </Flex>
   );
 }

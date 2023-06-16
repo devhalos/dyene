@@ -1,9 +1,23 @@
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import {
+  Navigate,
+  RouterProvider,
+  createBrowserRouter,
+} from 'react-router-dom';
+import { CategoryListPage } from './category';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <p>hello world</p>,
+    element: (
+      <Navigate
+        replace
+        to='/categories'
+      />
+    ),
+  },
+  {
+    path: '/categories',
+    element: <CategoryListPage />,
   },
 ]);
 

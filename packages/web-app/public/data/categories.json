@@ -1,0 +1,52 @@
+[
+  {
+    "id": "animals",
+    "name": "Animals",
+    "photoUrl": "/img/categories/animals-sm.jpg"
+  },
+  {
+    "id": "astronomy",
+    "name": "Astronomy",
+    "photoUrl": "/img/categories/astronomy-sm.jpg"
+  },
+  {
+    "id": "cars",
+    "name": "Cars",
+    "photoUrl": "/img/categories/cars-sm.jpg"
+  },
+  {
+    "id": "elements",
+    "name": "Elements",
+    "photoUrl": "/img/categories/elements-sm.jpg"
+  },
+  {
+    "id": "movies",
+    "name": "Movies",
+    "photoUrl": "/img/categories/movies-sm.jpg"
+  },
+  {
+    "id": "mythology",
+    "name": "Mythology",
+    "photoUrl": "/img/categories/mythology-sm.jpg"
+  },
+  {
+    "id": "places",
+    "name": "Places",
+    "photoUrl": "/img/categories/places-sm.jpg"
+  },
+  {
+    "id": "plants",
+    "name": "Plants",
+    "photoUrl": "/img/categories/plants-sm.jpg"
+  },
+  {
+    "id": "super-hero",
+    "name": "Super Hero",
+    "photoUrl": "/img/categories/super-hero-sm.jpg"
+  },
+  {
+    "id": "video-game",
+    "name": "Video Game",
+    "photoUrl": "/img/categories/video-game-sm.jpg"
+  }
+]
