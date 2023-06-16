@@ -3,9 +3,14 @@ import { Preview } from '@storybook/react';
 import React from 'react';
 import defaultPreview from '../../../.storybook/preview';
 import AppTheme from '../src/AppTheme';
+import i18n from '../src/common/services/lang';
 
 const preview: Preview = {
   ...defaultPreview,
+  parameters: {
+    ...defaultPreview.parameters,
+    i18n,
+  },
   decorators: [
     (Story) => (
       <AppTheme>

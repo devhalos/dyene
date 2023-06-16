@@ -12,6 +12,7 @@ export default function BaseLayout({ children }: BaseLayoutProps) {
       as='article'
       height='100vh'
       direction='column'
+      // TODO: move color to theme config
       background='#F3F8F2'
       className='base-layout'
     >
