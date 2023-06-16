@@ -1,34 +1,40 @@
-import { SimpleGrid } from '@chakra-ui/react';
+import { Box, SimpleGrid } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import React from 'react';
 import Category, { CategoryProps } from '../Category';
 
-export type CategoryListProps = {
-  items: CategoryProps[];
-  onClick: (
-    category: CategoryProps,
-    event: React.MouseEvent<HTMLButtonElement>,
-  ) => void;
+type ButtonEvent = React.MouseEvent<HTMLButtonElement>;
+
+export type CategoryListItemProps = CategoryProps & {
+  id: string;
 };
 
-export default function CategoryList({ items, onClick }: CategoryListProps) {
+export type CategoryListProps = {
+  items: CategoryListItemProps[];
+  onSelectCategory: (category: CategoryProps, event: ButtonEvent) => void;
+};
+
+export default function CategoryList({
+  items,
+  onSelectCategory,
+}: CategoryListProps) {
   return (
     <SimpleGrid
-      columns={4}
       spacing={10}
-      minChildWidth={200}
+      minChildWidth={240}
     >
       {items.map((item) => (
-        <motion.button
-          key={item.title}
+        <Box
+          as={motion.button}
+          key={item.id}
           whileHover={{
-            scale: 1.1,
+            scale: 1.05,
             transition: { duration: 0.2 },
           }}
-          onClick={(e) => onClick(item, e)}
+          onClick={(e: ButtonEvent) => onSelectCategory(item, e)}
         >
           <Category {...item} />
-        </motion.button>
+        </Box>
       ))}
     </SimpleGrid>
   );

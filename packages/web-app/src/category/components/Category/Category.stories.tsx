@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
-import animal from '../../../assets/animals-sm.jpg';
+import animal from '../../../assets/sample-category.jpg';
 import CategoryComponent from './Category';
 
 const meta: Meta<typeof CategoryComponent> = {

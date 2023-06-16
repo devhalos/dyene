@@ -1,7 +1,7 @@
 import { expect, jest } from '@storybook/jest';
 import { Meta, StoryObj } from '@storybook/react';
 import { userEvent, within } from '@storybook/testing-library';
-import animal from '../../../assets/animals-sm.jpg';
+import animal from '../../../assets/sample-category.jpg';
 import CategoryListComponent from './CategoryList';
 
 const meta: Meta<typeof CategoryListComponent> = {
@@ -17,11 +17,12 @@ type Story = StoryObj<typeof CategoryListComponent>;
 export const Category: Story = {
   args: {
     items: [...Array(8).keys()].map((i) => ({
+      id: `animal-${i}`,
       title: `Animal ${i}`,
       coverImage: animal,
       coverImageDesc: 'A wild animal',
     })),
-    onClick: (category) => alert(category.title),
+    onSelectCategory: (category) => alert(category.title),
   },
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);

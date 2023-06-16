@@ -19,13 +19,14 @@ export default function Category({
         objectFit='cover'
         rounded='md'
         borderBottomRadius={0}
+        height={200}
       />
       <CardBody>
         <Heading
-          as='h2'
+          as='h3'
           textAlign='center'
-          fontWeight='medium'
           fontSize='lg'
+          fontWeight='medium'
         >
           {title}
         </Heading>
