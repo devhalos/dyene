@@ -1,23 +1,25 @@
-import { Center, Spacer, MenuItem, MenuList, Menu } from '@chakra-ui/react';
+import { Center, MenuItem, MenuList, Menu } from '@chakra-ui/react';
 import { FaEllipsisV } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 import Logo from '../Logo/Logo';
-import { AppBar, MenuButton, Title } from './Header.styles';
+import { AppBar, MenuButton, Title } from './HeaderStyles';
 
 export default function Header() {
+  const { t } = useTranslation();
+
   return (
-    <AppBar>
-      <Center>
+    <AppBar as='section'>
+      <Center as='header'>
         <Logo colorLetter='#eee' />
         <Title>Dyene</Title>
       </Center>
-      <Spacer />
       <Menu>
         <MenuButton>
           <FaEllipsisV />
         </MenuButton>
         <MenuList>
-          <MenuItem>Categories</MenuItem>
-          <MenuItem>Preferences</MenuItem>
+          <MenuItem>{t('categories')}</MenuItem>
+          <MenuItem>{t('preferences')}</MenuItem>
         </MenuList>
       </Menu>
     </AppBar>
