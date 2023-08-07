@@ -14,7 +14,7 @@
     "build": {
       "dependsOn": ["^build"]
     },
-    "test-unit": {},
-    "storybook-test": {}
+    "test:unit": {},
+    "storybook:test": {}
   }
 }
