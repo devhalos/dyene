@@ -14,7 +14,7 @@ export default meta;
 
 type Story = StoryObj<typeof CategoryListComponent>;
 
-export const Category: Story = {
+export const CategoryList: Story = {
   args: {
     items: [...Array(8).keys()].map((i) => ({
       id: `animal-${i}`,
@@ -22,7 +22,7 @@ export const Category: Story = {
       coverImage: animal,
       coverImageDesc: 'A wild animal',
     })),
-    onSelectCategory: (category) => alert(category.title),
+    onSelectCategory: (category) => window.alert(category.title),
   },
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
@@ -32,7 +32,7 @@ export const Category: Story = {
 
     jest.spyOn(window, 'alert').mockImplementation(() => null);
 
-    userEvent.click(buttons[0] as Element);
+    await userEvent.click(buttons[0] as Element);
 
     expect(window.alert).toBeCalledWith('Animal 0');
   },
