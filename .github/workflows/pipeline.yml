@@ -1,0 +1,24 @@
+name: dyene
+on:
+  pull_request: 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repo's default branch
+        uses: actions/checkout@v3 
+
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: v18.17.1
+          cache: npm 
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Build Apps
+        run: npx nx run-many -t build
+    
