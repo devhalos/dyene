@@ -15,7 +15,7 @@
     "storybook": "storybook dev -p 6006",
     "storybook:test-runner": "npx concurrently -k -s first -n 'sb:app,sb:test' -c 'magenta,blue'",
     "storybook:test": "test-storybook --url http://localhost:6006",
-    "storybook:wait": "npx wait-on tcp:6006",
+    "storybook:wait": "npx wait-on tcp:6006 -l -t 300000",
     "storybook:wait-test": "echo 'storybook testing...' && npm run storybook:wait && npm run storybook:test",
     "storybook:build": "echo 'storybook building...' && storybook build --quiet",
     "storybook:static-serve": "echo 'storybook serving...' && npx http-server storybook-static --port 6006",
