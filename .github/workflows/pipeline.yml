@@ -44,8 +44,8 @@ jobs:
           git fetch origin main
           git branch --track main origin/main 
 
-      - name: Component Test
-        run: npx nx affected -t test:component
+      - name: Unit Test
+        run: npx nx affected -t test:unit
 
   component-test:
     runs-on: ubuntu-latest
