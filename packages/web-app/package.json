@@ -9,10 +9,17 @@
     "preview": "vite preview",
     "lint": "eslint .",
     "lint:type": "tsc --noEmit",
-    "test:unit": "echo 'no tests found'",
+    "test:unit": "echo 'no test found'",
+    "test:component": "npm run storybook:build && npm run storybook:static-test",
+    "test:component-dev": "npm run storybook:test-runner -- 'npm run storybook -- --ci --quiet' 'npm run storybook:wait-test'",
     "storybook": "storybook dev -p 6006",
-    "storybook:test": "test-storybook",
-    "storybook:build": "storybook build"
+    "storybook:test-runner": "npx concurrently -k -s first -n 'sb:app,sb:test' -c 'magenta,blue'",
+    "storybook:test": "test-storybook --url http://localhost:6006",
+    "storybook:wait": "npx wait-on tcp:6006",
+    "storybook:wait-test": "npm run storybook:wait && npm run storybook:test",
+    "storybook:build": "storybook build",
+    "storybook:static-serve": "npx http-server storybook-static --port 6006 --silent",
+    "storybook:static-test": "npm run storybook:test-runner -- 'npm run storybook:static-serve' 'npm run storybook:wait-test'"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.7.0",
