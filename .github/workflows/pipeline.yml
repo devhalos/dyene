@@ -67,7 +67,5 @@ jobs:
           git branch --track main origin/main 
 
       - name: Component Test
-        run: |      
-          npx playwright install --with-deps
-          npm run -w web-app test:component
+        run: npx nx affected -t test:component
     
