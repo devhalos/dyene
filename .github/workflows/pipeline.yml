@@ -69,5 +69,5 @@ jobs:
       - name: Component Test
         run: |      
           npx playwright install --with-deps
-          npx nx affected -t test:component
+          npm run -w web-app test:component
     
