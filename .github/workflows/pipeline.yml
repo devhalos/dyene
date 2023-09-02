@@ -33,6 +33,7 @@ jobs:
         run: npm ci
 
   build:
+    needs: install-deps
     runs-on: ubuntu-latest
 
     steps:
@@ -69,6 +70,7 @@ jobs:
         run: npx nx affected -t build
 
   unit-test:
+    needs: install-deps
     runs-on: ubuntu-latest
 
     steps:
@@ -105,6 +107,7 @@ jobs:
         run: npx nx affected -t test:unit
 
   component-test:
+    needs: install-deps
     runs-on: ubuntu-latest
 
     steps:
