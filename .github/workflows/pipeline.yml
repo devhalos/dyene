@@ -1,22 +1,36 @@
 name: dyene
+
 on:
-  pull_request: 
+  push: 
 
 jobs:
+  
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check out repo's default branch
-        uses: actions/checkout@v3 
+      - uses: actions/checkout@v3 
 
-      - name: Setup node
-        uses: actions/setup-node@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: v18.17.1
           cache: npm 
 
+      - name: Cache node modules
+        id: cache-nodemodules
+        uses: actions/cache@v3
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+          
       - name: Install dependencies
+        if: steps.cache-nodemodules.outputs.cache-hit != 'true'
         run: npm ci
 
       - name: Track main branch
@@ -26,4 +40,115 @@ jobs:
 
       - name: Build packages
         run: npx nx affected -t build
+
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3 
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: v18.17.1
+          cache: npm 
+
+      - name: Cache node modules
+        id: cache-nodemodules
+        uses: actions/cache@v3
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+          
+      - name: Install dependencies
+        if: steps.cache-nodemodules.outputs.cache-hit != 'true'
+        run: npm ci
+
+      - name: Track main branch
+        run: |
+          git fetch origin main
+          git branch --track main origin/main 
+
+      - name: Build packages
+        run: npx nx affected -t lint      
+
+  unit-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3 
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: v18.17.1
+          cache: npm 
+
+      - name: Cache node modules
+        id: cache-nodemodules
+        uses: actions/cache@v3
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+          
+      - name: Install dependencies
+        if: steps.cache-nodemodules.outputs.cache-hit != 'true'
+        run: npm ci
+
+      - name: Track main branch
+        run: |
+          git fetch origin main
+          git branch --track main origin/main 
+
+      - name: Unit Test
+        run: npx nx affected -t test:unit
+
+  component-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3 
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: v18.17.1
+          cache: npm 
+
+      - name: Cache node modules
+        id: cache-nodemodules
+        uses: actions/cache@v3
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+          
+      - name: Install dependencies
+        if: steps.cache-nodemodules.outputs.cache-hit != 'true'
+        run: npm ci
+
+      - name: Install Playwright
+        run: npx playwright install --with-deps
+
+      - name: Track main branch
+        run: |
+          git fetch origin main
+          git branch --track main origin/main 
+
+      - name: Component Test
+        run: npx nx affected -t test:component
     
