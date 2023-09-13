@@ -1,106 +1,522 @@
 [
-  { "name": "Albatross" },
-  { "name": "Alligator" },
-  { "name": "Antelope" },
-  { "name": "Arctic fox" },
-  { "name": "Armadillo" },
-  { "name": "Baboon" },
-  { "name": "Badger" },
-  { "name": "Bat" },
-  { "name": "Beagle" },
-  { "name": "Bear" },
-  { "name": "Beaver" },
-  { "name": "Bison" },
-  { "name": "Blue whale" },
-  { "name": "Boar" },
-  { "name": "Buffalo" },
-  { "name": "Bull" },
-  { "name": "Camel" },
-  { "name": "Cat" },
-  { "name": "Chameleon" },
-  { "name": "Cheetah" },
-  { "name": "Chihuahua" },
-  { "name": "Chimpanzee" },
-  { "name": "Chinchillas" },
-  { "name": "Cobra" },
-  { "name": "Cow" },
-  { "name": "Crocodile" },
-  { "name": "Crow" },
-  { "name": "Deer" },
-  { "name": "Dodo" },
-  { "name": "Dog" },
-  { "name": "Dolphin" },
-  { "name": "Donkey" },
-  { "name": "Duck" },
-  { "name": "Eagle" },
-  { "name": "Eel" },
-  { "name": "Elephant" },
-  { "name": "Elk" },
-  { "name": "Emu" },
-  { "name": "Fish" },
-  { "name": "Flamingo" },
-  { "name": "Flying squirrel" },
-  { "name": "Fox" },
-  { "name": "Frog" },
-  { "name": "Giant Panda" },
-  { "name": "Giraffe" },
-  { "name": "Goat" },
-  { "name": "Goose" },
-  { "name": "Gorilla" },
-  { "name": "Hammerhead shark" },
-  { "name": "Hamster" },
-  { "name": "Hare" },
-  { "name": "Hawk" },
-  { "name": "Hedgehog" },
-  { "name": "Hen" },
-  { "name": "Hermit Crab" },
-  { "name": "Hippopotamus" },
-  { "name": "Horse" },
-  { "name": "Ibex" },
-  { "name": "Iguana" },
-  { "name": "Jackal" },
-  { "name": "Jaguar" },
-  { "name": "Jellyfish" },
-  { "name": "Kangaroo" },
-  { "name": "King Cobra" },
-  { "name": "Koala" },
-  { "name": "Lemur" },
-  { "name": "Leopard" },
-  { "name": "Lion" },
-  { "name": "Lizard" },
-  { "name": "Llama" },
-  { "name": "Lynx" },
-  { "name": "Mammoth" },
-  { "name": "Meerkat" },
-  { "name": "Mole" },
-  { "name": "Monitor lizard" },
-  { "name": "Monkey" },
-  { "name": "Mouse" },
-  { "name": "Mule" },
-  { "name": "Orangutan" },
-  { "name": "Ostrich" },
-  { "name": "Otter" },
-  { "name": "Owl" },
-  { "name": "Panther" },
-  { "name": "Peacock" },
-  { "name": "Pigeon" },
-  { "name": "Polar bear" },
-  { "name": "Porcupine" },
-  { "name": "Possum" },
-  { "name": "Rabbit" },
-  { "name": "Racoon" },
-  { "name": "Rat" },
-  { "name": "Rhinoceros" },
-  { "name": "Sheep" },
-  { "name": "Sloth" },
-  { "name": "Snake" },
-  { "name": "Swan" },
-  { "name": "Tiger" },
-  { "name": "Tortoise" },
-  { "name": "Turtle" },
-  { "name": "Vulture" },
-  { "name": "Whale" },
-  { "name": "Wolf" },
-  { "name": "Wombat" },
-  { "name": "Zebra" }
+  {
+    "name": "Albatross",
+    "photo": "img/subjects/animals/albatross.jpeg",
+    "interestingFact": "These feathered giants have the longest wingspan of any bird—up to 11 feet! The wandering albatross is the biggest of some two dozen different species. Albatrosses use their formidable wingspans to ride the ocean winds and sometimes to glide for hours without rest or even a flap of their wings."
+  },
+  {
+    "name": "Alligator",
+    "photo": "img/subjects/animals/alligator.png",
+    "interestingFact": "One of the weirder facts about alligators is that the sex of them is determined not by DNA but, rather, by climate. If the temperature in the baby alligator nest is warm, male alligators are born; if the temperature is cool, the babies are females.5 Mother alligators lay their eggs on a mound of dirt. When the eggs are ready to hatch, the baby alligators use an \"egg tooth\" on top of their snouts to break the shell. "
+  },
+  {
+    "name": "Antelope",
+    "photo": "img/subjects/animals/antelope.jpeg",
+    "interestingFact": "The eland is the largest species of antelope. The eland, found in Africa, is the largest antelope species, with males weighing up to 2,200 pounds (1,000 kilograms). Despite their size, they are agile runners and can reach speeds of up to 40 miles per hour (64 kilometers per hour)."
+  },
+  {
+    "name": "Arctic fox",
+    "photo": "img/subjects/animals/arctic-fox.png",
+    "interestingFact": "Arctic fox fur changes seasonally. In the winter, they sport fluffy white coats that blend into the snow; in the summer they shed these coats for brownish or grayish, shorter fur that helps them camouflage into bare rocks and dirt."
+  },
+  {
+    "name": "Armadillo",
+    "photo": "img/subjects/animals/armadillo.jpg",
+    "interestingFact": "A common myth is that armadillos curl up into tight balls and roll away. None actively choose to roll away from predators. The only armadillos able to curl into tight balls are two species belonging to the Tolypeutes genus. These are commonly known as the Brazilian and Southern three-banded armadillos. All other armadillo species have too many plates, making this level of flexibility impossible. "
+  },
+  {
+    "name": "Baboon",
+    "photo": "img/subjects/animals/baboon.jpeg",
+    "interestingFact": "Baboons are very social and are often found in groups. The collective noun is a 'troop' of baboons. Each group can contain several to hundreds of members. Members hunt, groom, sleep, and eat together. The hierarchal structure of baboon troops has fascinated researchers for decades."
+  },
+  {
+    "name": "Badger",
+    "photo": "img/subjects/animals/badger.jpg",
+    "interestingFact": "Badgers live in a network of tunnels and burrows which they dig with their claws, known as a sett. Badgers don't bring food into their setts because they like to keep it clean. They even have something like communal toilets that are outside of the setts"
+  },
+  {
+    "name": "Bat",
+    "photo": "img/subjects/animals/bat.jpg",
+    "interestingFact": "Bats are the only flying mammal. While the flying squirrel can only glide for short distances, bats are true fliers. A bat's wing resembles a modified human hand — imagine the skin between your fingers larger, thinner and stretched. This flexible skin membrane that extends between each long finger bone and many movable joints make bats agile fliers."
+  },
+  {
+    "name": "Beagle",
+    "photo": "img/subjects/animals/beagle.jpeg",
+    "interestingFact": "'Polar bear pregnancy detector' is a much less common Beagle job, but it does exist. A two-year-old Beagle named Elvis was actually trained to determine whether a polar bear was pregnant by smelling her poop."
+  },
+  {
+    "name": "Bear",
+    "photo": "img/subjects/animals/bear.jpg",
+    "interestingFact": "Bears care deeply about family members. They will risk their lives and even fight to the death in order to save a cub or sibling from danger."
+  },
+  {
+    "name": "Beaver",
+    "photo": "img/subjects/animals/beaver.jpg",
+    "interestingFact": "Beavers float small trees and branches through canals to the stream where they are building their lodge. The lodge can have several underwater entrances to keep out predators, with a large dry room inside that is used as a nursery and haven. The living area is well insulated by the lodge and surrounding water, so the temperature is considerably warmer inside the lodges than outside."
+  },
+  {
+    "name": "Bison",
+    "photo": "img/subjects/animals/bison.jpg",
+    "interestingFact": "You can judge a bison's mood by its tail. When it hangs down and switches naturally, the bison is usually calm. If the tail is standing straight up, watch out! It may be ready to charge. No matter what a bison's tail is doing, remember that they are unpredictable and can charge at any moment. Every year, there are regrettable accidents caused by people getting too close to these massive animals. It's great to love the bison, but love them from a distance. "
+  },
+  {
+    "name": "Blue whale",
+    "photo": "img/subjects/animals/blue-whale.jpg",
+    "interestingFact": "The blue whale has a heart the size of a Volkswagen Beetle. Its stomach can hold one ton of krill and it needs to eat about four tons of krill each day. They are the loudest animals on Earth and are even louder than a jet engine. Their calls reach 188 decibels, while a jet reaches 140 decibels."
+  },
+  {
+    "name": "Boar",
+    "photo": "img/subjects/animals/boar.png",
+    "interestingFact": "Unlike traditional pork, wild boar is lean and has less than half the amount of fat. This makes it a great option for those who are looking to maintain a healthy diet while still enjoying a delicious meal. In addition to its nutritional benefits, wild boar is also a sustainable and eco-friendly option."
+  },
+  {
+    "name": "Buffalo",
+    "photo": "img/subjects/animals/bufallo.jpg",
+    "interestingFact": "Before delivering new calves, buffalos carry their pregnancy for roughly 11 months. This, however, happens only during the wet season. Newborn calves have a greater chance of living during the rainy season because there is more food and drinkable water compared to the dry season. Calves spend about a year with their moms before becoming more self-sufficient within the herd. When the boys reach the age of two, they leave to join bachelor groups."
+  },
+  {
+    "name": "Bull",
+    "photo": "img/subjects/animals/bull.jpeg",
+    "interestingFact": "Bulls are typically the same height as cows or slightly taller. And because of their greater muscle and bone mass, they weigh significantly more. A bull usually has a hump on his shoulders. Bull horns are thicker and shorter than those of cows in horned cattle."
+  },
+  {
+    "name": "Camel",
+    "photo": "img/subjects/animals/camel.png",
+    "interestingFact": "Camels have three sets of eyelids and two rows of eyelashes to keep sand out of their eyes. Camels have thick lips which let them forage for thorny plants other animals can't eat. Camels can completely shut their nostrils during sandstorms."
+  },
+  {
+    "name": "Cat",
+    "photo": "img/subjects/animals/cat.jpg",
+    "interestingFact": "Did you know that originally it was thought that Egyptians domesticated the cat? But in 2004, French archaeologists discovered a 9,500 year old cat grave in Cyprus. This makes this the oldest known pet cat and it predates Egyptian art about cats by over 4,000 years!"
+  },
+  {
+    "name": "Chameleon",
+    "photo": "img/subjects/animals/chameleon.jpeg",
+    "interestingFact": "Chameleons' tongues are extremely quick and powerful, sometimes exceeding accelerations of 41g. This means they can grab their prey within fractions of a second, making it impossible to get away. If humans could do this, it would make grabbing that last biscuit from the tin much easier"
+  },
+  {
+    "name": "Cheetah",
+    "photo": "img/subjects/animals/cheetah.png",
+    "interestingFact": "Cheetahs are capable of reaching speeds of up to 75 mph. They usually only get up to these speeds in short sprints as they attack their prey, with a cheetah's average speed being around 40 mph. They also have an incredibly high acceleration, with the ability to go from 0 to 60 mph in only 3 seconds!"
+  },
+  {
+    "name": "Chihuahua",
+    "photo": "img/subjects/animals/chihuahua.jpeg",
+    "interestingFact": "Chihuahuas are best known for their teensy size, big round eyes, and propensity to shiver and shake."
+  },
+  {
+    "name": "Chimpanzee",
+    "photo": "img/subjects/animals/chimpanzee.jpeg",
+    "interestingFact": "Like us, chimps are highly social animals, care for their offspring for years and can live to be over 50. In fact, chimpanzees are our closest cousins; we share about 98% of our genes."
+  },
+  {
+    "name": "Chinchillas",
+    "photo": "img/subjects/animals/chinchilla.jpg",
+    "interestingFact": "Chinchillas will take occasional dust baths to keep their fur conditioned. Their fur should not be bathed in water or get wet since it takes too long to dry and may cause the skin to become inflamed."
+  },
+  {
+    "name": "Cobra",
+    "photo": "img/subjects/animals/cobra.jpg",
+    "interestingFact": "Snake charming is 'often a sad con game in which an exhausted cobra is put on the defensive, yet conditioned (with pain) not to strike the flutist,' Smithsonian's National Zoo says."
+  },
+  {
+    "name": "Cow",
+    "photo": "img/subjects/animals/cow.jpeg",
+    "interestingFact": "Cows have an acute sense of smell - they can smell something up to 6 miles away! The natural yellow color of butter comes mainly from beta-carotene found in the grass the cows graze on. An average dairy cow weighs about 1,400 pounds. Milk is better for cooling your mouth after eating spicy food."
+  },
+  {
+    "name": "Crocodile",
+    "photo": "img/subjects/animals/crocodile.jpg",
+    "interestingFact": "The mighty crocodile is one of the oldest living reptiles on the planet. They first appeared in the same time dinosaurs roamed the earth, dating back to almost 240 million years. This fact alone makes the crocodiles one of the ancient ancestors of the animal kingdom today."
+  },
+  {
+    "name": "Crow",
+    "photo": "img/subjects/animals/crow.png",
+    "interestingFact": "These clever, curious birds have a reputation as thieves and pranksters. They have been known to fly off with all sorts of little shiny objects, including people's car keys. Pet crows have even learned to mimic, or imitate, human speech. Crows belong to the group of birds called songbirds."
+  },
+  {
+    "name": "Deer",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Dodo",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Dog",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Dolphin",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Donkey",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Duck",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Eagle",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Eel",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Elephant",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Elk",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Emu",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Fish",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Flamingo",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Flying squirrel",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Fox",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Frog",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Giant Panda",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Giraffe",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Goat",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Goose",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Gorilla",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Hammerhead shark",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Hamster",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Hare",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Hawk",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Hedgehog",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Hen",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Hermit Crab",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Hippopotamus",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Horse",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Ibex",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Iguana",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Jackal",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Jaguar",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Jellyfish",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Kangaroo",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "King Cobra",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Koala",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Lemur",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Leopard",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Lion",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Lizard",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Llama",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Lynx",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Mammoth",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Meerkat",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Mole",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Monitor lizard",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Monkey",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Mouse",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Mule",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Orangutan",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Ostrich",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Otter",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Owl",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Panther",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Peacock",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Pigeon",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Polar bear",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Porcupine",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Possum",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Rabbit",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Racoon",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Rat",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Rhinoceros",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Sheep",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Sloth",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Snake",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Swan",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Tiger",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Tortoise",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Turtle",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Vulture",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Whale",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Wolf",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Wombat",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  },
+  {
+    "name": "Zebra",
+    "photo": "img/subjects/animals/",
+    "interestingFact": ""
+  }
 ]
