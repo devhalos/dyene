@@ -351,58 +351,53 @@
   },
   {
     "name": "Mammoth",
-    "photo": "img/subjects/animals/",
-    "interestingFact": ""
+    "photo": "img/subjects/animals/mammoth.png",
+    "interestingFact": "The woolly mammoth was known for its large size, fur, and imposing tusks. Thriving during the Pleistocene ice ages, woolly mammoths died out after much of their habitat was lost as Earth's climate warmed in the aftermath of the last ice age. The species is named for the appearance of its long thick coat of fur."
   },
   {
     "name": "Meerkat",
-    "photo": "img/subjects/animals/",
-    "interestingFact": ""
+    "photo": "img/subjects/animals/meerkat.png",
+    "interestingFact": "Meerkats are adapted for digging and have a membrane that can cover the eye to protect it while burrowing. These small diggers also have ears that close to keep out the sand while at work."
   },
   {
     "name": "Mole",
-    "photo": "img/subjects/animals/",
-    "interestingFact": ""
-  },
-  {
-    "name": "Monitor lizard",
-    "photo": "img/subjects/animals/",
-    "interestingFact": ""
+    "photo": "img/subjects/animals/mole.jpg",
+    "interestingFact": "Moles live in Europe, Asia, and North America. Their eyesight is poor but they have an acute sense of smell and a good sense of touch. They can feel for prey and sense underground vibrations. Moles live in underground tunnels that they dig with their powerful front legs."
   },
   {
     "name": "Monkey",
-    "photo": "img/subjects/animals/",
-    "interestingFact": ""
+    "photo": "img/subjects/animals/monkey.jpg",
+    "interestingFact": "Monkeys are intelligent animals that are good at solving problems. Almost all types live together in groups. A monkey group commonly includes several related females, their young, and one or more males. Monkeys use facial expressions, body movements, and various noises to communicate with each other."
   },
   {
     "name": "Mouse",
-    "photo": "img/subjects/animals/",
-    "interestingFact": ""
+    "photo": "img/subjects/animals/mouse.jpg",
+    "interestingFact": "Mice have a slender body, blunt or tapered muzzle, scantily haired, prominent ears, narrow hind feet with bald soles, and sharp, small claws. The thinly furred tail appears hairless; it may be about as long as the head and body, or it can be much shorter."
   },
   {
     "name": "Mule",
-    "photo": "img/subjects/animals/",
-    "interestingFact": ""
+    "photo": "img/subjects/animals/mule.png",
+    "interestingFact": "A mule is the offspring of a male donkey (a jack) and a female horse (a mare). A horse has 64 chromosomes, and a donkey has 62. The mule ends up with 63. Mules can be either male or female, but, because of the odd number of chromosomes, they can't reproduce."
   },
   {
     "name": "Orangutan",
-    "photo": "img/subjects/animals/",
-    "interestingFact": ""
+    "photo": "img/subjects/animals/orangutan.jpg",
+    "interestingFact": "Known for their distinctive red fur, orangutans are the largest arboreal mammal, spending most of their time in trees. Long, powerful arms and grasping hands and feet allow them to move through the branches. These great apes share 96.4% of our genes and are highly intelligent creatures."
   },
   {
     "name": "Ostrich",
-    "photo": "img/subjects/animals/",
-    "interestingFact": ""
+    "photo": "img/subjects/animals/ostrich.jpeg",
+    "interestingFact": "The flightless Ostrich is a bird of superlatives. It's the largest and tallest bird on the planet, growing to maybe eight feet tall, and weighing 250 pounds! It's also the fastest creature on two legs, capable of running at 40 miles an hour. Ostriches have never been observed to stick their heads in the sand."
   },
   {
     "name": "Otter",
-    "photo": "img/subjects/animals/",
-    "interestingFact": ""
+    "photo": "img/subjects/animals/otter.jpeg",
+    "interestingFact": "Otters have the densest fur of any animal—as many as a million hairs per square inch in places. Otters also have particularly stinky poop, which even has its own name: spraints. It's thought to get its special odor, which some scientists describe as smelling like violets, from the seafood diet otters eat."
   },
   {
     "name": "Owl",
-    "photo": "img/subjects/animals/",
-    "interestingFact": ""
+    "photo": "img/subjects/animals/owl.jpg",
+    "interestingFact": "Owl eyes face forward and are immovable, providing great binocular vision. Owls compensate for immovable eyes by the ability to rotate their heads about 270 degrees. Contrary to popular belief, owls have excellent vision both in daylight and at night."
   },
   {
     "name": "Panther",
