@@ -1,106 +1,507 @@
 [
-  { "name": "Albatross" },
-  { "name": "Alligator" },
-  { "name": "Antelope" },
-  { "name": "Arctic fox" },
-  { "name": "Armadillo" },
-  { "name": "Baboon" },
-  { "name": "Badger" },
-  { "name": "Bat" },
-  { "name": "Beagle" },
-  { "name": "Bear" },
-  { "name": "Beaver" },
-  { "name": "Bison" },
-  { "name": "Blue whale" },
-  { "name": "Boar" },
-  { "name": "Buffalo" },
-  { "name": "Bull" },
-  { "name": "Camel" },
-  { "name": "Cat" },
-  { "name": "Chameleon" },
-  { "name": "Cheetah" },
-  { "name": "Chihuahua" },
-  { "name": "Chimpanzee" },
-  { "name": "Chinchillas" },
-  { "name": "Cobra" },
-  { "name": "Cow" },
-  { "name": "Crocodile" },
-  { "name": "Crow" },
-  { "name": "Deer" },
-  { "name": "Dodo" },
-  { "name": "Dog" },
-  { "name": "Dolphin" },
-  { "name": "Donkey" },
-  { "name": "Duck" },
-  { "name": "Eagle" },
-  { "name": "Eel" },
-  { "name": "Elephant" },
-  { "name": "Elk" },
-  { "name": "Emu" },
-  { "name": "Fish" },
-  { "name": "Flamingo" },
-  { "name": "Flying squirrel" },
-  { "name": "Fox" },
-  { "name": "Frog" },
-  { "name": "Giant Panda" },
-  { "name": "Giraffe" },
-  { "name": "Goat" },
-  { "name": "Goose" },
-  { "name": "Gorilla" },
-  { "name": "Hammerhead shark" },
-  { "name": "Hamster" },
-  { "name": "Hare" },
-  { "name": "Hawk" },
-  { "name": "Hedgehog" },
-  { "name": "Hen" },
-  { "name": "Hermit Crab" },
-  { "name": "Hippopotamus" },
-  { "name": "Horse" },
-  { "name": "Ibex" },
-  { "name": "Iguana" },
-  { "name": "Jackal" },
-  { "name": "Jaguar" },
-  { "name": "Jellyfish" },
-  { "name": "Kangaroo" },
-  { "name": "King Cobra" },
-  { "name": "Koala" },
-  { "name": "Lemur" },
-  { "name": "Leopard" },
-  { "name": "Lion" },
-  { "name": "Lizard" },
-  { "name": "Llama" },
-  { "name": "Lynx" },
-  { "name": "Mammoth" },
-  { "name": "Meerkat" },
-  { "name": "Mole" },
-  { "name": "Monitor lizard" },
-  { "name": "Monkey" },
-  { "name": "Mouse" },
-  { "name": "Mule" },
-  { "name": "Orangutan" },
-  { "name": "Ostrich" },
-  { "name": "Otter" },
-  { "name": "Owl" },
-  { "name": "Panther" },
-  { "name": "Peacock" },
-  { "name": "Pigeon" },
-  { "name": "Polar bear" },
-  { "name": "Porcupine" },
-  { "name": "Possum" },
-  { "name": "Rabbit" },
-  { "name": "Racoon" },
-  { "name": "Rat" },
-  { "name": "Rhinoceros" },
-  { "name": "Sheep" },
-  { "name": "Sloth" },
-  { "name": "Snake" },
-  { "name": "Swan" },
-  { "name": "Tiger" },
-  { "name": "Tortoise" },
-  { "name": "Turtle" },
-  { "name": "Vulture" },
-  { "name": "Whale" },
-  { "name": "Wolf" },
-  { "name": "Wombat" },
-  { "name": "Zebra" }
+  {
+    "name": "Albatross",
+    "photo": "img/subjects/animals/albatross.jpeg",
+    "interestingFact": "These feathered giants have the longest wingspan of any bird—up to 11 feet! The wandering albatross is the biggest of some two dozen different species. Albatrosses use their formidable wingspans to ride the ocean winds and sometimes to glide for hours without rest or even a flap of their wings."
+  },
+  {
+    "name": "Alligator",
+    "photo": "img/subjects/animals/alligator.png",
+    "interestingFact": "One of the weirder facts about alligators is that the sex of them is determined not by DNA but, rather, by climate. If the temperature in the baby alligator nest is warm, male alligators are born; if the temperature is cool, the babies are females.5 Mother alligators lay their eggs on a mound of dirt. When the eggs are ready to hatch, the baby alligators use an \"egg tooth\" on top of their snouts to break the shell. "
+  },
+  {
+    "name": "Antelope",
+    "photo": "img/subjects/animals/antelope.jpeg",
+    "interestingFact": "The eland is the largest species of antelope. The eland, found in Africa, is the largest antelope species, with males weighing up to 2,200 pounds (1,000 kilograms). Despite their size, they are agile runners and can reach speeds of up to 40 miles per hour (64 kilometers per hour)."
+  },
+  {
+    "name": "Arctic fox",
+    "photo": "img/subjects/animals/arctic-fox.png",
+    "interestingFact": "Arctic fox fur changes seasonally. In the winter, they sport fluffy white coats that blend into the snow; in the summer they shed these coats for brownish or grayish, shorter fur that helps them camouflage into bare rocks and dirt."
+  },
+  {
+    "name": "Armadillo",
+    "photo": "img/subjects/animals/armadillo.jpg",
+    "interestingFact": "A common myth is that armadillos curl up into tight balls and roll away. None actively choose to roll away from predators. The only armadillos able to curl into tight balls are two species belonging to the Tolypeutes genus. These are commonly known as the Brazilian and Southern three-banded armadillos. All other armadillo species have too many plates, making this level of flexibility impossible. "
+  },
+  {
+    "name": "Baboon",
+    "photo": "img/subjects/animals/baboon.jpeg",
+    "interestingFact": "Baboons are very social and are often found in groups. The collective noun is a 'troop' of baboons. Each group can contain several to hundreds of members. Members hunt, groom, sleep, and eat together. The hierarchal structure of baboon troops has fascinated researchers for decades."
+  },
+  {
+    "name": "Badger",
+    "photo": "img/subjects/animals/badger.jpg",
+    "interestingFact": "Badgers live in a network of tunnels and burrows which they dig with their claws, known as a sett. Badgers don't bring food into their setts because they like to keep it clean. They even have something like communal toilets that are outside of the setts"
+  },
+  {
+    "name": "Bat",
+    "photo": "img/subjects/animals/bat.jpg",
+    "interestingFact": "Bats are the only flying mammal. While the flying squirrel can only glide for short distances, bats are true fliers. A bat's wing resembles a modified human hand — imagine the skin between your fingers larger, thinner and stretched. This flexible skin membrane that extends between each long finger bone and many movable joints make bats agile fliers."
+  },
+  {
+    "name": "Beagle",
+    "photo": "img/subjects/animals/beagle.jpeg",
+    "interestingFact": "'Polar bear pregnancy detector' is a much less common Beagle job, but it does exist. A two-year-old Beagle named Elvis was actually trained to determine whether a polar bear was pregnant by smelling her poop."
+  },
+  {
+    "name": "Bear",
+    "photo": "img/subjects/animals/bear.jpg",
+    "interestingFact": "Bears care deeply about family members. They will risk their lives and even fight to the death in order to save a cub or sibling from danger."
+  },
+  {
+    "name": "Beaver",
+    "photo": "img/subjects/animals/beaver.jpg",
+    "interestingFact": "Beavers float small trees and branches through canals to the stream where they are building their lodge. The lodge can have several underwater entrances to keep out predators, with a large dry room inside that is used as a nursery and haven. The living area is well insulated by the lodge and surrounding water, so the temperature is considerably warmer inside the lodges than outside."
+  },
+  {
+    "name": "Bison",
+    "photo": "img/subjects/animals/bison.jpg",
+    "interestingFact": "You can judge a bison's mood by its tail. When it hangs down and switches naturally, the bison is usually calm. If the tail is standing straight up, watch out! It may be ready to charge. No matter what a bison's tail is doing, remember that they are unpredictable and can charge at any moment. Every year, there are regrettable accidents caused by people getting too close to these massive animals. It's great to love the bison, but love them from a distance. "
+  },
+  {
+    "name": "Blue whale",
+    "photo": "img/subjects/animals/blue-whale.jpg",
+    "interestingFact": "The blue whale has a heart the size of a Volkswagen Beetle. Its stomach can hold one ton of krill and it needs to eat about four tons of krill each day. They are the loudest animals on Earth and are even louder than a jet engine. Their calls reach 188 decibels, while a jet reaches 140 decibels."
+  },
+  {
+    "name": "Boar",
+    "photo": "img/subjects/animals/boar.png",
+    "interestingFact": "Unlike traditional pork, wild boar is lean and has less than half the amount of fat. This makes it a great option for those who are looking to maintain a healthy diet while still enjoying a delicious meal. In addition to its nutritional benefits, wild boar is also a sustainable and eco-friendly option."
+  },
+  {
+    "name": "Buffalo",
+    "photo": "img/subjects/animals/bufallo.jpg",
+    "interestingFact": "Before delivering new calves, buffalos carry their pregnancy for roughly 11 months. This, however, happens only during the wet season. Newborn calves have a greater chance of living during the rainy season because there is more food and drinkable water compared to the dry season. Calves spend about a year with their moms before becoming more self-sufficient within the herd. When the boys reach the age of two, they leave to join bachelor groups."
+  },
+  {
+    "name": "Bull",
+    "photo": "img/subjects/animals/bull.jpeg",
+    "interestingFact": "Bulls are typically the same height as cows or slightly taller. And because of their greater muscle and bone mass, they weigh significantly more. A bull usually has a hump on his shoulders. Bull horns are thicker and shorter than those of cows in horned cattle."
+  },
+  {
+    "name": "Camel",
+    "photo": "img/subjects/animals/camel.png",
+    "interestingFact": "Camels have three sets of eyelids and two rows of eyelashes to keep sand out of their eyes. Camels have thick lips which let them forage for thorny plants other animals can't eat. Camels can completely shut their nostrils during sandstorms."
+  },
+  {
+    "name": "Cat",
+    "photo": "img/subjects/animals/cat.jpg",
+    "interestingFact": "Did you know that originally it was thought that Egyptians domesticated the cat? But in 2004, French archaeologists discovered a 9,500 year old cat grave in Cyprus. This makes this the oldest known pet cat and it predates Egyptian art about cats by over 4,000 years!"
+  },
+  {
+    "name": "Chameleon",
+    "photo": "img/subjects/animals/chameleon.jpeg",
+    "interestingFact": "Chameleons' tongues are extremely quick and powerful, sometimes exceeding accelerations of 41g. This means they can grab their prey within fractions of a second, making it impossible to get away. If humans could do this, it would make grabbing that last biscuit from the tin much easier"
+  },
+  {
+    "name": "Cheetah",
+    "photo": "img/subjects/animals/cheetah.png",
+    "interestingFact": "Cheetahs are capable of reaching speeds of up to 75 mph. They usually only get up to these speeds in short sprints as they attack their prey, with a cheetah's average speed being around 40 mph. They also have an incredibly high acceleration, with the ability to go from 0 to 60 mph in only 3 seconds!"
+  },
+  {
+    "name": "Chihuahua",
+    "photo": "img/subjects/animals/chihuahua.jpeg",
+    "interestingFact": "Chihuahuas are best known for their teensy size, big round eyes, and propensity to shiver and shake."
+  },
+  {
+    "name": "Chimpanzee",
+    "photo": "img/subjects/animals/chimpanzee.jpeg",
+    "interestingFact": "Like us, chimps are highly social animals, care for their offspring for years and can live to be over 50. In fact, chimpanzees are our closest cousins; we share about 98% of our genes."
+  },
+  {
+    "name": "Chinchillas",
+    "photo": "img/subjects/animals/chinchilla.jpg",
+    "interestingFact": "Chinchillas will take occasional dust baths to keep their fur conditioned. Their fur should not be bathed in water or get wet since it takes too long to dry and may cause the skin to become inflamed."
+  },
+  {
+    "name": "Cobra",
+    "photo": "img/subjects/animals/cobra.jpg",
+    "interestingFact": "Snake charming is 'often a sad con game in which an exhausted cobra is put on the defensive, yet conditioned (with pain) not to strike the flutist,' Smithsonian's National Zoo says."
+  },
+  {
+    "name": "Cow",
+    "photo": "img/subjects/animals/cow.jpeg",
+    "interestingFact": "Cows have an acute sense of smell - they can smell something up to 6 miles away! The natural yellow color of butter comes mainly from beta-carotene found in the grass the cows graze on. An average dairy cow weighs about 1,400 pounds. Milk is better for cooling your mouth after eating spicy food."
+  },
+  {
+    "name": "Crocodile",
+    "photo": "img/subjects/animals/crocodile.jpg",
+    "interestingFact": "The mighty crocodile is one of the oldest living reptiles on the planet. They first appeared in the same time dinosaurs roamed the earth, dating back to almost 240 million years. This fact alone makes the crocodiles one of the ancient ancestors of the animal kingdom today."
+  },
+  {
+    "name": "Crow",
+    "photo": "img/subjects/animals/crow.png",
+    "interestingFact": "These clever, curious birds have a reputation as thieves and pranksters. They have been known to fly off with all sorts of little shiny objects, including people's car keys. Pet crows have even learned to mimic, or imitate, human speech. Crows belong to the group of birds called songbirds."
+  },
+  {
+    "name": "Deer",
+    "photo": "img/subjects/animals/deer.jpg",
+    "interestingFact": "The reindeer is the only domestic deer. Most of the deer species primarily live in the wild for the entirety of their lifespan, the reindeer is the only domesticated species and it can coexist with humans"
+  },
+  {
+    "name": "Dodo",
+    "photo": "img/subjects/animals/dodo.jpg",
+    "interestingFact": "The dodo, a bird species known as Raphus cucullatus, became extinct when the last time it was seen was confirmed in 1662. A person named Volkert Evertsz reported this sighting on a small island near Mauritius. Following that, the bird went extinct due to hunting, habitat damage, and the introduction of invasive species like rats and pigs, about eight decades after the Dutch arrived."
+  },
+  {
+    "name": "Dog",
+    "photo": "img/subjects/animals/dog.png",
+    "interestingFact": "Your dog can smell your feelings. In fact, your dog's sense of smell is approximately 100,000 times better than yours. So it shouldn't be shocking that they can in fact, smell things such as fear. When a human is fearful, they perspire, and a dog is easily able to pick up on this change."
+  },
+  {
+    "name": "Dolphin",
+    "photo": "img/subjects/animals/dolphin.jpg",
+    "interestingFact": "Dolphins and whales sleep in an unusual way. Called “unihemispheric slow-wave sleep,” it basically means that they sleep with only half of their brain. When a dolphin goes to sleep, it shuts down one hemisphere of its brain and closes the opposite eye. This allows the dolphin to monitor what’s going on around them and to regulate breathing."
+  },
+  {
+    "name": "Donkey",
+    "photo": "img/subjects/animals/donkey.png",
+    "interestingFact": "Donkeys, also called burros and asses, are found throughout the world. They are members of the Equidae family, which also includes horses and zebras. They look a lot like their equine cousins, but have long, floppy ears and tend to be stockier than horses or zebras."
+  },
+  {
+    "name": "Duck",
+    "photo": "img/subjects/animals/duck.jpg",
+    "interestingFact": "All ducks have highly waterproof feathers. A duck's feathers are so waterproof that even when the duck dives underwater, the downy underlayer of feathers right next to the skin will stay completely dry."
+  },
+  {
+    "name": "Eagle",
+    "photo": "img/subjects/animals/eagle.jpeg",
+    "interestingFact": "Philippine eagles are solitary and territorial creatures. The Philippine eagle pair needs about 4000-11000 hectares of forest land to thrive in the wild, depending on the number of prey items in the area. They take 5-7 years to sexually mature. It only lays a single egg every two years."
+  },
+  {
+    "name": "Eel",
+    "photo": "img/subjects/animals/eel.png",
+    "interestingFact": "Unlike most fish, eels do not have pelvic fins, and most species do not have pectoral fins. Eels have a continuous dorsal, anal, and caudal fin that runs around the tail tip. To swim, eels generate waves that travel the length of their bodies. To swim backwards, they reverse the direction of the wave.S"
+  },
+  {
+    "name": "Elephant",
+    "photo": "img/subjects/animals/elephant.png",
+    "interestingFact": "The memory of elephants is legendary, and for good reason. Of all land mammals, elephants possess the largest brains. They have the ability to recall distant watering holes, other elephants, and humans they have encountered, even after the passage of many years."
+  },
+  {
+    "name": "Elk",
+    "photo": "img/subjects/animals/elk.png",
+    "interestingFact": "Unlike some other deer species, like reindeer, only male elk have antlers. They begin growing their signature antlers in the spring, shedding them each winter. While they grow, elk antlers are covered with “velvet,” a soft layer of skin that sheds when the weather turns warm in the summer."
+  },
+  {
+    "name": "Emu",
+    "photo": "img/subjects/animals/emu.jpeg",
+    "interestingFact": "The emu is a fast runner and can reach speeds of up to 31 mph (50 km/hr). Their long legs enable them to walk considerable distances or outrun danger. Emus are also strong swimmers."
+  },
+  {
+    "name": "Fish",
+    "photo": "img/subjects/animals/fish.jpg",
+    "interestingFact": "The majority of fish have developed eyes that will detect the type of colors typical of their environment. For example, inshore fish have good color vision, whereas offshore pelagic fish have limited color vision and detect only a few if any colors other than black and white."
+  },
+  {
+    "name": "Flamingo",
+    "photo": "img/subjects/animals/flamingo.png",
+    "interestingFact": "An adult flamingo's legs can be 30- to 50-inches long—longer than its entire body. Flamingos often stand on one leg to preserve body heat, tucking the other leg into their warm plumage. They will alternate legs to regulate their body temperature."
+  },
+  {
+    "name": "Flying squirrel",
+    "photo": "img/subjects/animals/flying-squirrel.jpg",
+    "interestingFact": "While we know all species of flying squirrels are active at night, it wasn't until recently that researchers discovered some also glow at night. They also learned the flying squirrels glow more strongly on their undersides. It's still unclear why the squirrels give off a fluorescent effect at all, but the researchers have several theories, including avoidance of predators at night, communication among the squirrels, and navigation of snowy and icy terrain."
+  },
+  {
+    "name": "Fox",
+    "photo": "img/subjects/animals/fox.jpg",
+    "interestingFact": "Similar to cats, foxes are nocturnal. Due to their vertically slanted pupils, they have increased visibility in dim light. Foxes also climb trees, use their whiskers to navigate and even stalk their prey like cats. Grey foxes can retract their claws, too — just like cats."
+  },
+  {
+    "name": "Frog",
+    "photo": "img/subjects/animals/frog.jpeg",
+    "interestingFact": "Frogs have excellent night vision and are very sensitive to movement. The bulging eyes of most frogs allow them to see in front, to the sides, and partially behind them. When a frog swallows food, it pulls its eyes down into the roof of its mouth, to help push the food down its throat."
+  },
+  {
+    "name": "Giant Panda",
+    "photo": "img/subjects/animals/giant-panda.jpeg",
+    "interestingFact": "Why giant pandas are so important. Giant pandas help to keep their mountain forests healthy by spreading seeds in their droppings, which helps vegetation to thrive. The Giant panda's forested habitat is also important for local people – for food, income and fuel for cooking and heating."
+  },
+  {
+    "name": "Giraffe",
+    "photo": "img/subjects/animals/giraffe.jpg",
+    "interestingFact": "A giraffe's neck is too short to reach the ground. As a result, it has to awkwardly spread its front legs or kneel to reach the ground for a drink of water."
+  },
+  {
+    "name": "Goat",
+    "photo": "img/subjects/animals/goat.jpg",
+    "interestingFact": "They communicate with each other by bleating. Mothers will often call to their young (kids) to ensure they stay close-by. Mother and kid goats recognise each other's calls soon after the mothers give birth."
+  },
+  {
+    "name": "Goose",
+    "photo": "img/subjects/animals/goose.jpg",
+    "interestingFact": "Geese eat seeds, nuts, grass, plants and berries. They are the largest waterfowls, the other being swans. Though they are waterfowls, they spent most of their time on land. Geese always fly in the shape of a 'V', as it allows at least 71 % greater flying range."
+  },
+  {
+    "name": "Gorilla",
+    "photo": "img/subjects/animals/gorilla.jpg",
+    "interestingFact": "Gorillas can learn sign language, utilize rudimentary tools, and even make some of their own tools. Gorillas' hands even have unique fingerprints, like humans (and koalas)."
+  },
+  {
+    "name": "Hammerhead shark",
+    "photo": "img/subjects/animals/hammerhead-shark.png",
+    "interestingFact": "Their wide-set eyes give them a better visual range than most other sharks. And by spreading their highly specialized sensory organs over their wide, mallet-shaped head, they can more thoroughly scan the ocean for food."
+  },
+  {
+    "name": "Hamster",
+    "photo": "img/subjects/animals/hamster.png",
+    "interestingFact": "A unique feature of hamsters is the outpouching of the cheeks that extends along both sides of the head and neck all the way back to the shoulders. In the wild, these large pouches allow hamsters to gather food during foraging trips and then carry the food back to their nest for consumption later."
+  },
+  {
+    "name": "Hare",
+    "photo": "img/subjects/animals/hare.jpg",
+    "interestingFact": "Hares are generally larger than rabbits, with longer ears, larger and longer hind legs and have black markings on their fur. Hares are very fast-moving animals and are able to run at speeds of up to 56 km/h (35 mph). The mountain hare is a large species, though it is slightly smaller than the European hare."
+  },
+  {
+    "name": "Hawk",
+    "photo": "img/subjects/animals/hawk.png",
+    "interestingFact": "Not only can hawks see greater distances than humans, but their visual acuity (the ability to see clearly) is eight times that of ours. Hawks also see in color. In many animal species the males are larger and stronger, but in hawks the difference in size between the sexes is reversed, and females are larger."
+  },
+  {
+    "name": "Hedgehog",
+    "photo": "img/subjects/animals/hedgehog.jpeg",
+    "interestingFact": "Hedgehogs are famous for their prickly spines, which they have everywhere except on their face, legs and bellies. These cute critters depend on their spines for defense, both while they sleep and when they face enemies."
+  },
+  {
+    "name": "Hen",
+    "photo": "img/subjects/animals/hen.jpg",
+    "interestingFact": "Hens teach sounds to their chicks while they are still in the egg. Chickens have a profound memory and are able to distinguish between more than 100 faces of their species. They can also recognise people. Chickens are able to distinguish colours."
+  },
+  {
+    "name": "Hermit Crab",
+    "photo": "img/subjects/animals/hermit-crab.png",
+    "interestingFact": "The hermit crab prefers certain shells. Pagurus samuelis, a common tide pool hermit crab, prefers the shell of the black turban snail. A hermit crab moves into larger shells as it grows — fighting with other hermit crabs for the shells if necessary — but it doesn't harm healthy snails."
+  },
+  {
+    "name": "Hippopotamus",
+    "photo": "img/subjects/animals/hippopotamus.jpg",
+    "interestingFact": "Their eyes, nose and ears are located on the top of their head, which means they can see and breathe whilst submerged in the water. What's more, these super-cool creatures sweat an oily red liquid which helps protect their skin from drying out - and acts as a sunblock, too!"
+  },
+  {
+    "name": "Horse",
+    "photo": "img/subjects/animals/horse.png",
+    "interestingFact": "Horses are special creatures. They are majestic, strong and can display a broad range of emotions. Whether they're around humans or other horses, they are amazingly communicative and thrive in social settings. These qualities are part of the reason why horses can develop such a strong bond with humans."
+  },
+  {
+    "name": "Ibex",
+    "photo": "img/subjects/animals/ibex.jpg",
+    "interestingFact": "Ibex are very nimble. They can jump more than 6 feet (1.8 meters) straight up without a running start. This helps them climb mountainous terrain with ease. Ibex hooves have sharp edges and concave undersides that act like suction cups to help them grip the sides of steep, rocky cliffs."
+  },
+  {
+    "name": "Iguana",
+    "photo": "img/subjects/animals/iguana.png",
+    "interestingFact": "Iguanas are some of the largest lizards found in the Americas, with their whiplike tail making up about half of that length. Like other reptiles, iguanas are cold-blooded, egg-laying animals with an excellent ability to adapt to their environment."
+  },
+  {
+    "name": "Jackal",
+    "photo": "img/subjects/animals/jackal.jpeg",
+    "interestingFact": "Like the fox in European folklore, the jackal is often represented in African folk tales as a trickster. Its ability to adapt to changing circumstances and its legendary stealth and cunning have inspired stories about the wily creature that dodges traps and avoids hunters year in year out."
+  },
+  {
+    "name": "Jaguar",
+    "photo": "img/subjects/animals/jaguar.jpg",
+    "interestingFact": "The jaguar looks much like the leopard. But the jaguar is larger and has bigger black spots. The average jaguar is between 5 and 6 feet (1.5 and 1.8 meters) long, not including the tail. Males weigh between 220 and 350 pounds (100 and 160 kilograms)."
+  },
+  {
+    "name": "Jellyfish",
+    "photo": "img/subjects/animals/jellyfish.jpg",
+    "interestingFact": "Jellyfish have no brain, heart, bones or eyes. They are made up of a smooth, bag-like body and tentacles armed with tiny, stinging cells. These incredible invertebrates use their stinging tentacles to stun or paralyse prey before gobbling it up. The jellyfish's mouth is found in the centre of its body."
+  },
+  {
+    "name": "Kangaroo",
+    "photo": "img/subjects/animals/kangaroo.jpg",
+    "interestingFact": "Kangaroos belong to the animal family Macropus, literally 'big foot.' Thanks to their large feet, kangaroos can leap some 30 feet (9 meters) in a single bound, and travel more than 30 miles (48 kilometers) per hour. Kangaroos use their strong tails for balance while jumping."
+  },
+  {
+    "name": "Koala",
+    "photo": "img/subjects/animals/koala.png",
+    "interestingFact": "Koalas have poor vision and rely heavily on their other senses. They have excellent hearing which helps them detect predators and other koalas. They have an acute sense of smell which also helps them detect other koalas and their favourite food trees."
+  },
+  {
+    "name": "Lemur",
+    "photo": "img/subjects/animals/lemur.png",
+    "interestingFact": "Lemurs are good adapters as they can slow their own metabolism and reproduce less when needed. Due to living an arboreal lifestyle, lemurs can do amazing things such as making a sashay-like movement on their hind legs with their arms stretched above them as they move along the ground."
+  },
+  {
+    "name": "Leopard",
+    "photo": "img/subjects/animals/leopard.jpg",
+    "interestingFact": "Leopards are incredibly athletic and known for their climbing ability. They often carry food into trees to avoid losing it to scavengers like lions and hyenas. They are also fast and can run up to 36 mph. In comparison, the cheetah, the fastest land mammal, runs 50 to 80 mph."
+  },
+  {
+    "name": "Lion",
+    "photo": "img/subjects/animals/lion.jpg",
+    "interestingFact": "The lion has forever been a symbol of strength, power and ferocity. During WWF tours to Africa, seeing the majestic species up-close is sure to be a spine-tingling experience. 10. African lions are the most social of all big cats and live together in groups or 'prides.'. A pride consists of about 15 lions."
+  },
+  {
+    "name": "Lizard",
+    "photo": "img/subjects/animals/lizard.png",
+    "interestingFact": "Many lizards live on the ground, but some live in trees and others are burrowers. Like all reptiles, lizards are cold-blooded animals. Although most lizards have long tails and move around on four legs, a few are legless and snakelike. There are even lizards that can glide through the air on winglike flaps of skin."
+  },
+  {
+    "name": "Llama",
+    "photo": "img/subjects/animals/llama.jpg",
+    "interestingFact": "Llamas are peaceful natured hardy animals. They have excellent survival skills and their thick coats allow them to thrive in climates with extreme temperatures. Llamas were native to North America. However they gradually migrated to South America from the North American plains around 3 million years ago."
+  },
+  {
+    "name": "Lynx",
+    "photo": "img/subjects/animals/lynx.jpg",
+    "interestingFact": "Unlike cougars or other wild cats, lynx don't sink into the snow. Their long, round feet have a big toe set at a wide angle, which helps to distribute their weight and allows them to stay on top of the snow. This makes it easier to hunt in deeper snow at higher altitudes."
+  },
+  {
+    "name": "Mammoth",
+    "photo": "img/subjects/animals/mammoth.png",
+    "interestingFact": "The woolly mammoth was known for its large size, fur, and imposing tusks. Thriving during the Pleistocene ice ages, woolly mammoths died out after much of their habitat was lost as Earth's climate warmed in the aftermath of the last ice age. The species is named for the appearance of its long thick coat of fur."
+  },
+  {
+    "name": "Meerkat",
+    "photo": "img/subjects/animals/meerkat.png",
+    "interestingFact": "Meerkats are adapted for digging and have a membrane that can cover the eye to protect it while burrowing. These small diggers also have ears that close to keep out the sand while at work."
+  },
+  {
+    "name": "Mole",
+    "photo": "img/subjects/animals/mole.jpg",
+    "interestingFact": "Moles live in Europe, Asia, and North America. Their eyesight is poor but they have an acute sense of smell and a good sense of touch. They can feel for prey and sense underground vibrations. Moles live in underground tunnels that they dig with their powerful front legs."
+  },
+  {
+    "name": "Monkey",
+    "photo": "img/subjects/animals/monkey.jpg",
+    "interestingFact": "Monkeys are intelligent animals that are good at solving problems. Almost all types live together in groups. A monkey group commonly includes several related females, their young, and one or more males. Monkeys use facial expressions, body movements, and various noises to communicate with each other."
+  },
+  {
+    "name": "Mouse",
+    "photo": "img/subjects/animals/mouse.jpg",
+    "interestingFact": "Mice have a slender body, blunt or tapered muzzle, scantily haired, prominent ears, narrow hind feet with bald soles, and sharp, small claws. The thinly furred tail appears hairless; it may be about as long as the head and body, or it can be much shorter."
+  },
+  {
+    "name": "Mule",
+    "photo": "img/subjects/animals/mule.png",
+    "interestingFact": "A mule is the offspring of a male donkey (a jack) and a female horse (a mare). A horse has 64 chromosomes, and a donkey has 62. The mule ends up with 63. Mules can be either male or female, but, because of the odd number of chromosomes, they can't reproduce."
+  },
+  {
+    "name": "Orangutan",
+    "photo": "img/subjects/animals/orangutan.jpg",
+    "interestingFact": "Known for their distinctive red fur, orangutans are the largest arboreal mammal, spending most of their time in trees. Long, powerful arms and grasping hands and feet allow them to move through the branches. These great apes share 96.4% of our genes and are highly intelligent creatures."
+  },
+  {
+    "name": "Ostrich",
+    "photo": "img/subjects/animals/ostrich.jpeg",
+    "interestingFact": "The flightless Ostrich is a bird of superlatives. It's the largest and tallest bird on the planet, growing to maybe eight feet tall, and weighing 250 pounds! It's also the fastest creature on two legs, capable of running at 40 miles an hour. Ostriches have never been observed to stick their heads in the sand."
+  },
+  {
+    "name": "Otter",
+    "photo": "img/subjects/animals/otter.jpeg",
+    "interestingFact": "Otters have the densest fur of any animal—as many as a million hairs per square inch in places. Otters also have particularly stinky poop, which even has its own name: spraints. It's thought to get its special odor, which some scientists describe as smelling like violets, from the seafood diet otters eat."
+  },
+  {
+    "name": "Owl",
+    "photo": "img/subjects/animals/owl.jpg",
+    "interestingFact": "Owl eyes face forward and are immovable, providing great binocular vision. Owls compensate for immovable eyes by the ability to rotate their heads about 270 degrees. Contrary to popular belief, owls have excellent vision both in daylight and at night."
+  },
+  {
+    "name": "Panther",
+    "photo": "img/subjects/animals/panther.png",
+    "interestingFact": "Perhaps surprisingly, the black panther habitat often features water. They like to live near water streams, rivers and in flooded forests. They are strong swimmers who can also hunt in the water. They are also able to live in human-populated areas more effectively than any other big cats if they have to."
+  },
+  {
+    "name": "Peacock",
+    "photo": "img/subjects/animals/peacock.png",
+    "interestingFact": "The reflection of light on their feathers causes frequent color changes, resulting in their beautiful feathers, even though peacocks are brown. Peacocks are known to be one of the loudest creatures and make screeching sounds. Peachicks, even when they are only a day old, can walk, drink, and eat on their own."
+  },
+  {
+    "name": "Pigeon",
+    "photo": "img/subjects/animals/pigeon.jpg",
+    "interestingFact": "Pigeons are incredibly complex and intelligent animals. They are one of only a small number of species to pass the 'mirror test' - a test of self recognition. They can also recognise each letter of the human alphabet, differentiate between photographs, and even distinguish different humans within a photograph."
+  },
+  {
+    "name": "Polar bear",
+    "photo": "img/subjects/animals/polar-bear.jpg",
+    "interestingFact": "Polar bears are excellent swimmers, but their preferred habitat is on top of the ice that covers Arctic seas much of the year. That is where they mate, hunt and rear their young. Sea ice is vital to polar bears. It provides a platform for them to hunt, live, breed, and in some cases, create maternal dens."
+  },
+  {
+    "name": "Porcupine",
+    "photo": "img/subjects/animals/porcupine.jpg",
+    "interestingFact": "The porcupine (Erethizon dorsatum) is best known for the sharp quills that cover its body. A slow moving, medium-sized mammal, the porcupine has poor eyesight and relies on its sense of hearing and smell, as well as its quills to avoid predators."
+  },
+  {
+    "name": "Possum",
+    "photo": "img/subjects/animals/possum.png",
+    "interestingFact": "Possums can live for up to 11 years. Possums are nocturnal marsupials. Most possums live in the hollows of tall trees, but the common ringtail possum builds nests known as 'dreys' in bushes or trees. Possums mainly eat eucalyptus and other leaves."
+  },
+  {
+    "name": "Rabbit",
+    "photo": "img/subjects/animals/rabbit.jpg",
+    "interestingFact": "Rabbits are small, furry mammals with long ears, short fluffy tails, and strong, large hind legs. They have 2 pairs of sharp incisors (front teeth), one pair on top and one pair on the bottom. They also have 2 peg teeth behind the top incisors."
+  },
+  {
+    "name": "Racoon",
+    "photo": "img/subjects/animals/racoon.png",
+    "interestingFact": "The front and hind paws of raccoons have 5 digits each. The dexterous front paws enable the raccoon to grasp and manipulate food items. Raccoons are excellent climbers, and can descend a tree head first. Raccoons are primarily crepuscular (active at dawn and dusk) and nocturnal (active at night)."
+  },
+  {
+    "name": "Rhinoceros",
+    "photo": "img/subjects/animals/rhinoceros.png",
+    "interestingFact": "These brilliant beasts are known for their awesome, giant horns that grow from their snouts - hence the name “rhinoceros', meaning “nose horn”. Javan and Indian rhinos have one horn, where as the white, black and Sumatran rhinos have two. "
+  },
+  {
+    "name": "Sheep",
+    "photo": "img/subjects/animals/sheep.jpg",
+    "interestingFact": "Sheep are able to experience emotions such as fear, anger, rage, despair, boredom, disgust and happiness. Sheep are very gentle animals and were one of the first animals to be domesticated. They can differentiate facial expressions, and prefer a smile to a frown. Sheep have excellent peripheral vision."
+  },
+  {
+    "name": "Sloth",
+    "photo": "img/subjects/animals/sloth.jpg",
+    "interestingFact": "Sloths can spend 90% of their lives hanging upside down thanks to their impressive biology. Studies show this is possible because their organs are attached to their rib cage, so they don't weigh down on their lungs. Unlike us, a sloth can hang upside down without affecting their breathing."
+  },
+  {
+    "name": "Snake",
+    "photo": "img/subjects/animals/snake.jpg",
+    "interestingFact": "Snakes have diverse sets of rods and cones - the specialised cells in the retina that an animal uses to detect light. Having multiple types of visual pigments inside the cones allows animals to see in colour because these pigments are sensitive to different wavelengths of light."
+  },
+  {
+    "name": "Swan",
+    "photo": "img/subjects/animals/swan.jpg",
+    "interestingFact": "The Swan is known around the world for its beauty, elegance, and grace. The swan is a genus of waterfowl that has the ability to swim and fly with incredible speed and agility. This bird is also very intelligent, devoted to its mate, and highly aggressive about defending its young."
+  },
+  {
+    "name": "Tiger",
+    "photo": "img/subjects/animals/tiger.jpg",
+    "interestingFact": "Tigers are some of the most amazing creatures on the planet, they are the largest members of the cat family and are renowned for their power and strength. As the largest member of the cat family, Tigers are strong, powerful and one of nature's most feared predators."
+  },
+  {
+    "name": "Tortoise",
+    "photo": "img/subjects/animals/tortoise.jpg",
+    "interestingFact": "Most of them have a tall upper shell, or carapace (KARE-a-pays). Their back legs are thick and somewhat resemble the legs of an elephant. The front legs, on the other hand, are rather flat and covered with large scales. Their toes have no webbing between them, and many species have five claws on each front foot."
+  },
+  {
+    "name": "Turtle",
+    "photo": "img/subjects/animals/turtle.jpg",
+    "interestingFact": "The green turtle is the only sea turtle that is a strict herbivore, and its diet of seagrass and algae may contribute to the green fatty tissue. Similarly to other sea turtles, green turtles are known to travel incredibly long distances during their lifetimes."
+  },
+  {
+    "name": "Vulture",
+    "photo": "img/subjects/animals/vulture.png",
+    "interestingFact": "Vultures are relatively silent as they lack a syrinx so they can only hiss, growl, and snarl. They are predominantly scavengers but will occasionally kill small animals that are sick or dying. However, they will not eat a carcass that is more than a few days old as it become putrid."
+  },
+  {
+    "name": "Whale",
+    "photo": "img/subjects/animals/whale.png",
+    "interestingFact": "Whales are mammals just like we are. Just like us, they breathe air, have hair, are warm-blooded, give birth to live young, and feed their young milk. Whales are unique, beautiful, graceful and mysterious; they nurture, form friendships, innovate, grieve, play, sing and cooperate with one another."
+  },
+  {
+    "name": "Wolf",
+    "photo": "img/subjects/animals/wolf.jpg",
+    "interestingFact": "Wolves are complex, highly intelligent animals who are caring, playful, and above all devoted to family. Only a select few other species exhibit these traits so clearly. Just like elephants, gorillas and dolphins, wolves educate their young, take care of their injured and live in family groups."
+  },
+  {
+    "name": "Wombat",
+    "photo": "img/subjects/animals/wombat.jpg",
+    "interestingFact": "Like other marsupials, wombats give birth to a tiny, underdeveloped baby that crawls into its mother's pouch to grow and develop further. But wombats' pouches have a special difference — they are positioned backwards, opening toward the mother's rear rather than her head."
+  },
+  {
+    "name": "Zebra",
+    "photo": "img/subjects/animals/zebra.jpg",
+    "interestingFact": "The zebra is known for its black and weight striped pattern. It is a member of the Equus family and is most closely related to horses and donkeys. The three species differ slightly in appearance. The Grévy's zebra has a mule-like appearance with a narrow skull, robust neck and conical ears."
+  }
 ]
