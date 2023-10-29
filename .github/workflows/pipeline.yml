@@ -1,22 +1,21 @@
 name: dyene
 
 on:
-  push: 
+  push:
 
 jobs:
-  
   build:
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 2 
+          fetch-depth: 2
 
       - uses: actions/setup-node@v3
         with:
           node-version: v18.17.1
-          cache: npm 
+          cache: npm
 
       - name: Cache node modules
         id: cache-nodemodules
@@ -30,13 +29,13 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
-          
+
       - name: Install dependencies
         if: steps.cache-nodemodules.outputs.cache-hit != 'true'
         run: npm ci
 
       - name: Build packages
-        run: sh scripts/run-affected.sh build 
+        run: sh scripts/run-affected.sh build
 
   lint:
     runs-on: ubuntu-latest
@@ -44,12 +43,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 2 
+          fetch-depth: 2
 
       - uses: actions/setup-node@v3
         with:
           node-version: v18.17.1
-          cache: npm 
+          cache: npm
 
       - name: Cache node modules
         id: cache-nodemodules
@@ -63,13 +62,13 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
-          
+
       - name: Install dependencies
         if: steps.cache-nodemodules.outputs.cache-hit != 'true'
         run: npm ci
 
       - name: Lint packages
-        run: sh scripts/run-affected.sh lint     
+        run: sh scripts/run-affected.sh lint
 
   unit-test:
     runs-on: ubuntu-latest
@@ -77,12 +76,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 2 
+          fetch-depth: 2
 
       - uses: actions/setup-node@v3
         with:
           node-version: v18.17.1
-          cache: npm 
+          cache: npm
 
       - name: Cache node modules
         id: cache-nodemodules
@@ -96,14 +95,13 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
-          
+
       - name: Install dependencies
         if: steps.cache-nodemodules.outputs.cache-hit != 'true'
         run: npm ci
 
       - name: Unit Test
-        run: sh scripts/run-affected.sh test:unit     
-
+        run: sh scripts/run-affected.sh test:unit
 
   component-test:
     runs-on: ubuntu-latest
@@ -111,12 +109,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 2 
+          fetch-depth: 2
 
       - uses: actions/setup-node@v3
         with:
           node-version: v18.17.1
-          cache: npm 
+          cache: npm
 
       - name: Cache node modules
         id: cache-nodemodules
@@ -130,7 +128,7 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
-          
+
       - name: Install dependencies
         if: steps.cache-nodemodules.outputs.cache-hit != 'true'
         run: npm ci
@@ -140,5 +138,3 @@ jobs:
 
       - name: Component Test
         run: sh scripts/run-affected.sh test:component
-
-    
