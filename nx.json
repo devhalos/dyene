@@ -5,7 +5,7 @@
       "dependsOn": ["^build"]
     },
     "infra:test": {
-      "dependsOn": ["infra:init"]
+      "dependsOn": ["infra:diff"]
     },
     "infra:diff": {
       "dependsOn": ["infra:init"]
