@@ -200,10 +200,10 @@ jobs:
         with:
           fetch-depth: 2
 
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-python@v4
         with:
-          node-version: v18.17.1
-          cache: npm
+          python-version: 3.11
+          cache: 'pip'
 
       - uses: aws-actions/configure-aws-credentials@v4
         with:
@@ -212,22 +212,8 @@ jobs:
 
       - uses: hashicorp/setup-terraform@v2
 
-      - name: Cache node modules
-        id: cache-nodemodules
-        uses: actions/cache@v3
-        env:
-          cache-name: cache-node-modules
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-build-${{ env.cache-name }}-
-            ${{ runner.os }}-build-
-            ${{ runner.os }}-
-
-      - name: Install dependencies
-        if: steps.cache-nodemodules.outputs.cache-hit != 'true'
-        run: npm ci
+      - name: Install terraform compliance
+        run: pip install terraform-compliance
 
       - name: Test infrastructure
         run: sh scripts/run-affected.sh infra:test
