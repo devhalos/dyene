@@ -1,3 +1,10 @@
+locals {
+  cache_policy_id = {
+    caching_optimized = "658327ea-f89d-4fab-a63d-7e88639e58f6"
+  }
+  s3_origin_id = "${local.component_name}-origin"
+}
+
 resource "aws_cloudfront_origin_access_control" "web_app" {
   name                              = local.component_name
   description                       = "${local.component_name} acl"
@@ -7,7 +14,7 @@ resource "aws_cloudfront_origin_access_control" "web_app" {
 }
 
 resource "aws_cloudfront_distribution" "web_app" {
-  comment             = "${local.component_name} distribution"
+  comment             = local.component_name
   enabled             = true
   is_ipv6_enabled     = true
   default_root_object = "index.html"

@@ -5,7 +5,7 @@ variable "organization" {
 
 variable "project" {
   type    = string
-  default = "nihil"
+  default = "dyene"
 }
 
 variable "component" {

@@ -22,9 +22,9 @@
     "infra:lint": "sh ../../scripts/lint-infra.sh",
     "infra:workspace:dev": "sh ../../scripts/init-workspace-infra.sh dev",
     "infra:exec": "cd infrastructure && terraform",
-    "infra:test": "cd infrastructure && terraform test --test-directory=tests",
-    "infra:diff": "cd infrastructure && terraform plan -out=local.tfplan",
-    "infra:deploy": "cd infrastructure && terraform apply local.tfplan"
+    "infra:diff": "cd infrastructure && terraform plan -out=output.tfplan",
+    "infra:deploy": "cd infrastructure && terraform apply output.tfplan",
+    "infra:test": "cd infrastructure && terraform-compliance -f ./ -p output.tfplan"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.7.0",
