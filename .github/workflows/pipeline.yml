@@ -245,10 +245,6 @@ jobs:
 
   infra-diff:
     runs-on: ubuntu-latest
-    needs:
-      - infra-lint
-      - infra-scan
-      - infra-test
     permissions:
       id-token: write
 
