@@ -4,11 +4,14 @@
     "build": {
       "dependsOn": ["^build"]
     },
-    "infra:test": {
-      "dependsOn": ["infra:diff"]
+    "infra:workspace": {
+      "dependsOn": ["infra:init"]
     },
     "infra:diff": {
-      "dependsOn": ["infra:init"]
+      "dependsOn": ["infra:workspace"]
+    },
+    "infra:test": {
+      "dependsOn": ["infra:diff"]
     },
     "infra:deploy": {
       "dependsOn": ["infra:diff"]

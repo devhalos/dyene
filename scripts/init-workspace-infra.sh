@@ -1,7 +1,6 @@
 #!/bin/sh
 
-WORKSPACE=$(echo "$1" | sed -E 's/--//g')
-
+WORKSPACE="${INFRA_WORKSPACE:-test}"
 
 cd infrastructure || exit 1;
 
