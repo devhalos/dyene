@@ -20,7 +20,7 @@
     "storybook:build": "storybook build --quiet",
     "infra:init": "cd infrastructure && terraform init",
     "infra:lint": "sh ../../scripts/lint-infra.sh",
-    "infra:workspace:dev": "sh ../../scripts/init-workspace-infra.sh dev",
+    "infra:workspace": "sh ../../scripts/init-workspace-infra.sh",
     "infra:exec": "cd infrastructure && terraform",
     "infra:diff": "cd infrastructure && terraform plan -out=output.tfplan",
     "infra:deploy": "cd infrastructure && terraform apply output.tfplan",

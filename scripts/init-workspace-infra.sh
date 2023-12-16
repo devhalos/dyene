@@ -1,6 +1,7 @@
 #!/bin/sh
 
-WORKSPACE=$1
+WORKSPACE=$(echo "$1" | sed -E 's/--//g')
+
 
 cd infrastructure || exit 1;
 
