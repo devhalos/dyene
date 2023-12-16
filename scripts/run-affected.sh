@@ -13,6 +13,6 @@ else
     sh ./scripts/track-main-branch.sh
 fi
 
-echo "running npx nx affected --base=$base --head=$head -t $commands"
+echo "running npx nx affected -t $commands --base=$base --head=$head"
 
-npx nx affected --base=$base --head=$head -t "$commands"
+npx nx affected -t $commands --base=$base --head=$head
