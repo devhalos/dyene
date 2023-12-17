@@ -2,6 +2,9 @@ locals {
   cache_policy_id = {
     caching_optimized = "658327ea-f89d-4fab-a63d-7e88639e58f6"
   }
+  response_headers_policy_id = {
+    cors_with_preflight_and_security_headers = "eaab4381-ed33-4a86-88ca-d9558dc6cd63"
+  }
   s3_origin_id = "${local.component_name}-origin"
 }
 
@@ -33,11 +36,12 @@ resource "aws_cloudfront_distribution" "web_app" {
   }
 
   default_cache_behavior {
-    cache_policy_id        = local.cache_policy_id.caching_optimized
-    allowed_methods        = ["HEAD", "GET"]
-    cached_methods         = ["HEAD", "GET"]
-    target_origin_id       = local.s3_origin_id
-    viewer_protocol_policy = "redirect-to-https"
+    cache_policy_id            = local.cache_policy_id.caching_optimized
+    response_headers_policy_id = local.response_headers_policy_id.cors_with_preflight_and_security_headers
+    allowed_methods            = ["HEAD", "GET"]
+    cached_methods             = ["HEAD", "GET"]
+    target_origin_id           = local.s3_origin_id
+    viewer_protocol_policy     = "redirect-to-https"
   }
 
   restrictions {
