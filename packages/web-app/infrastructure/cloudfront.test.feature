@@ -27,5 +27,8 @@ Feature: Dyene web app cdn
         And it must contain "<property>"
         And its value must be "<value>"
         Examples:
-            | property               | value             |
-            | viewer_protocol_policy | redirect-to-https |
+            | property                   | value                                |
+            | cache_policy_id            | 658327ea-f89d-4fab-a63d-7e88639e58f6 |
+            | response_headers_policy_id | eaab4381-ed33-4a86-88ca-d9558dc6cd63 |
+            | compress                   | true                                 |
+            | viewer_protocol_policy     | redirect-to-https                    |

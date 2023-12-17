@@ -38,6 +38,7 @@ resource "aws_cloudfront_distribution" "web_app" {
   default_cache_behavior {
     cache_policy_id            = local.cache_policy_id.caching_optimized
     response_headers_policy_id = local.response_headers_policy_id.cors_with_preflight_and_security_headers
+    compress                   = true
     allowed_methods            = ["HEAD", "GET"]
     cached_methods             = ["HEAD", "GET"]
     target_origin_id           = local.s3_origin_id

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-WORKSPACE="${INFRA_WORKSPACE:-test}"
+WORKSPACE="${INFRA_WORKSPACE:-dev}"
 
 cd infrastructure || exit 1;
 
