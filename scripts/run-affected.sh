@@ -1,6 +1,6 @@
 #!/bin/sh
 
-command=$1
+commands="$*"
 
 current_branch=$(git branch --show-current)
 base=main
@@ -13,4 +13,6 @@ else
     sh ./scripts/track-main-branch.sh
 fi
 
-npx nx affected -t "$command" --base=$base --head=$head
+echo "running npx nx affected -t $commands --base=$base --head=$head"
+
+npx nx affected -t $commands --base=$base --head=$head
