@@ -11,6 +11,20 @@ provider "aws" {
   }
 }
 
+
+provider "aws" {
+  alias  = "us-east-1"
+  region = "us-east-1"
+  default_tags {
+    tags = {
+      environment  = local.environment
+      organization = var.organization
+      project      = var.project
+      component    = var.component
+    }
+  }
+}
+
 data "aws_region" "current" {}
 
 locals {
