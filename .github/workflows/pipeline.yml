@@ -242,6 +242,8 @@ jobs:
       - name: Test infrastructure
         env:
           INFRA_WORKSPACE: dev
-          TF_LOG: TRACE
+          TF_VAR_root_domain_name: devhalos.com
+          TF_VAR_domain_name: dev-dyene.devhalos.com
+
         run: |
           sh scripts/run-affected.sh infra:test
