@@ -18,13 +18,13 @@
     "storybook:wait": "npx wait-on tcp:6006 -l -t 60000",
     "storybook:wait-test": "npm run storybook:wait && npm run storybook:test",
     "storybook:build": "storybook build --quiet",
-    "infra:init": "cd infrastructure && terraform init",
+    "infra:init": "echo 'running infra:lint' && cd infrastructure && terraform init",
     "infra:lint": "sh ../../scripts/lint-infra.sh",
-    "infra:workspace": "sh ../../scripts/init-workspace-infra.sh",
+    "infra:workspace": "echo 'running infra:workspace' && sh ../../scripts/init-workspace-infra.sh",
     "infra:exec": "cd infrastructure && terraform",
-    "infra:diff": "cd infrastructure && terraform plan -out=output.tfplan",
+    "infra:diff": "echo 'running infra:diff' && cd infrastructure && terraform plan -out=output.tfplan",
     "infra:deploy": "cd infrastructure && terraform apply output.tfplan",
-    "infra:test": "cd infrastructure && terraform-compliance -f ./ -p output.tfplan"
+    "infra:test": "echo 'running infra:test' && cd infrastructure && terraform-compliance -f ./ -p output.tfplan"
   },
   "dependencies": {
     "@chakra-ui/react": "^2.7.0",
