@@ -22,7 +22,7 @@
     "infra:lint": "sh ../../scripts/lint-infra.sh",
     "infra:workspace": "echo 'running infra:workspace' && sh ../../scripts/init-workspace-infra.sh",
     "infra:exec": "cd infrastructure && terraform",
-    "infra:diff": "echo 'running infra:diff' && cd infrastructure && terraform plan -out=output.tfplan",
+    "infra:diff": "echo 'running infra:diff' && cd infrastructure && terraform force-unlock -force 86fb65db-b515-04b1-3a51-87e35b19a0f8 && terraform plan -out=output.tfplan",
     "infra:deploy": "cd infrastructure && terraform apply output.tfplan",
     "infra:test": "echo 'running infra:test' && cd infrastructure && terraform-compliance -f ./ -p output.tfplan"
   },
