@@ -240,5 +240,6 @@ jobs:
       - name: Test infrastructure
         env:
           INFRA_WORKSPACE: dev
+          TF_LOG: TRACE
         run: |
           sh scripts/run-affected.sh infra:test
