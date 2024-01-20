@@ -18,6 +18,7 @@ resource "aws_cloudfront_origin_access_control" "web_app" {
 
 resource "aws_cloudfront_distribution" "web_app" {
   comment             = local.component_name
+  aliases             = [var.domain_name]
   enabled             = true
   is_ipv6_enabled     = true
   default_root_object = "index.html"
@@ -52,7 +53,9 @@ resource "aws_cloudfront_distribution" "web_app" {
   }
 
   viewer_certificate {
-    cloudfront_default_certificate = true
+    acm_certificate_arn      = aws_acm_certificate.web_app.arn
+    ssl_support_method       = "sni-only"
+    minimum_protocol_version = "TLSv1.2_2021"
   }
 
   price_class = "PriceClass_200"

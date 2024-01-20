@@ -215,7 +215,9 @@ jobs:
           role-to-assume: ${{ secrets.CICD_PIPELINE_ROLE_ARN }}
           aws-region: ap-southeast-1
 
-      - uses: hashicorp/setup-terraform@v2
+      - uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: '1.6.6'
 
       - name: Cache node modules
         id: cache-nodemodules
@@ -240,5 +242,8 @@ jobs:
       - name: Test infrastructure
         env:
           INFRA_WORKSPACE: dev
+          TF_VAR_root_domain_name: devhalos.com
+          TF_VAR_domain_name: dev-dyene.devhalos.com
+
         run: |
           sh scripts/run-affected.sh infra:test
