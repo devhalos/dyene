@@ -22,6 +22,7 @@ resource "aws_cloudfront_distribution" "web_app" {
   enabled             = true
   is_ipv6_enabled     = true
   default_root_object = "index.html"
+  price_class         = "PriceClass_200"
 
   custom_error_response {
     error_caching_min_ttl = 86400
@@ -57,6 +58,13 @@ resource "aws_cloudfront_distribution" "web_app" {
     ssl_support_method       = "sni-only"
     minimum_protocol_version = "TLSv1.2_2021"
   }
+}
 
-  price_class = "PriceClass_200"
+resource "null_resource" "web_app_cache_invalidator" {
+  depends_on = [aws_cloudfront_distribution.web_app]
+  for_each   = toset([local.hash_dir_dist])
+
+  provisioner "local-exec" {
+    command = "aws cloudfront create-invalidation --distribution-id ${aws_cloudfront_distribution.web_app.id} --paths '/*'"
+  }
 }

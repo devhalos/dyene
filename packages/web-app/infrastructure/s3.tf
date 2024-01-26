@@ -29,3 +29,18 @@ data "aws_iam_policy_document" "web_app" {
     }
   }
 }
+
+module "web_app_source_files" {
+  source   = "hashicorp/dir/template"
+  base_dir = "${path.root}/../dist"
+}
+
+resource "aws_s3_object" "static_files" {
+  for_each     = module.web_app_source_files.files
+  bucket       = aws_s3_bucket.web_app.bucket
+  key          = each.key
+  content_type = each.value.content_type
+  content      = each.value.content
+  source       = each.value.source_path
+  etag         = each.value.digests.md5
+}

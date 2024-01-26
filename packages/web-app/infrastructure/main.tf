@@ -30,4 +30,10 @@ data "aws_region" "current" {}
 locals {
   environment    = terraform.workspace
   component_name = "${local.environment}-${var.organization}-${var.project}-${var.component}"
+  hash_dir_dist  = sha1(join("", [for f in fileset("../dist", "*") : filesha1("../dist/${f}")]))
+}
+
+
+output "hash_dir_dist" {
+  value = local.hash_dir_dist
 }
