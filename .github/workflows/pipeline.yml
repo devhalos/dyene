@@ -247,3 +247,70 @@ jobs:
 
         run: |
           sh scripts/run-affected.sh infra:test
+
+  infra-deploy:
+    runs-on: ubuntu-latest
+    needs:
+      - build
+      - lint
+      - unit-test
+      - component-test
+      - infra-lint
+      - infra-scan
+      - infra-test
+    permissions:
+      id-token: write
+    environment: dev
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: v18.17.1
+          cache: npm
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+          cache: 'pip'
+
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.CICD_PIPELINE_ROLE_ARN }}
+          aws-region: ap-southeast-1
+
+      - uses: hashicorp/setup-terraform@v3
+        with:
+          terraform_version: '1.6.6'
+
+      - name: Cache node modules
+        id: cache-nodemodules
+        uses: actions/cache@v3
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+
+      - name: Install dependencies
+        if: steps.cache-nodemodules.outputs.cache-hit != 'true'
+        run: npm ci
+
+      - name: Install terraform compliance
+        run: pip install terraform-compliance
+
+      - name: Test infrastructure
+        env:
+          INFRA_WORKSPACE: dev
+          TF_VAR_root_domain_name: devhalos.com
+          TF_VAR_domain_name: dev-dyene.devhalos.com
+
+        run: |
+          sh scripts/run-affected.sh infra:test

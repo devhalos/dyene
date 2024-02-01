@@ -8,7 +8,7 @@
       "dependsOn": ["infra:init"]
     },
     "infra:diff": {
-      "dependsOn": ["infra:workspace"]
+      "dependsOn": ["build", "infra:workspace"]
     },
     "infra:test": {
       "dependsOn": ["infra:diff"]
