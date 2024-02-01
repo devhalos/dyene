@@ -313,4 +313,4 @@ jobs:
           TF_VAR_domain_name: dev-dyene.devhalos.com
 
         run: |
-          sh scripts/run-affected.sh infra:test
+          sh scripts/run-affected.sh infra:deploy
