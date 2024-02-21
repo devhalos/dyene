@@ -17,7 +17,7 @@
     "@storybook/jest": "^0.2.3",
     "@storybook/react": "^7.5.1",
     "@storybook/react-vite": "^7.5.1",
-    "@storybook/test-runner": "^0.13.0",
+    "@storybook/test-runner": "^0.16.0",
     "@storybook/testing-library": "^0.2.2",
     "@tsconfig/strictest": "^2.0.2",
     "@typescript-eslint/eslint-plugin": "^6.9.0",
@@ -42,7 +42,7 @@
     "react-dom": "^18.2.0",
     "storybook": "^7.5.1",
     "storybook-react-i18next": "^2.0.9",
-    "wait-on": "^7.0.1"
+    "wait-on": "^7.2.0"
   },
   "workspaces": [
     "packages/*"
