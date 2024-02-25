@@ -1,6 +1,4 @@
 terraform {
-  required_version = ">= 1.6.1, < 1.7.0"
-
   backend "s3" {
     bucket         = "devhalos-nihil-dyene-state"
     dynamodb_table = "devhalos-nihil-dyene-state-locking"
