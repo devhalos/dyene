@@ -303,10 +303,7 @@ jobs:
         if: steps.cache-nodemodules.outputs.cache-hit != 'true'
         run: npm ci
 
-      - name: Install terraform compliance
-        run: pip install terraform-compliance
-
-      - name: Test infrastructure
+      - name: Deploy infrastructure
         env:
           INFRA_WORKSPACE: dev
           TF_VAR_root_domain_name: devhalos.com
