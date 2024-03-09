@@ -8,7 +8,7 @@ export default function App() {
   return (
     <AppQuery>
       <AppTheme>
-        <AppRouter />;
+        <AppRouter />
       </AppTheme>
     </AppQuery>
   );

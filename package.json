@@ -42,6 +42,7 @@
     "react-dom": "^18.2.0",
     "storybook": "^7.5.1",
     "storybook-react-i18next": "^2.0.9",
+    "typescript": "^5.3.3",
     "wait-on": "^7.0.1"
   },
   "workspaces": [

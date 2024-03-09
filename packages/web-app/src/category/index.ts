@@ -1,3 +1,3 @@
-import CategoryListPage from './components/CategoryListPage';
+import CategoryGridPage from './components/CategoryGridPage';
 
-export { CategoryListPage };
+export { CategoryGridPage };

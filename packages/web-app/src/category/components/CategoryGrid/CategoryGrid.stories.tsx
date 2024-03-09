@@ -2,19 +2,19 @@ import { expect, jest } from '@storybook/jest';
 import { Meta, StoryObj } from '@storybook/react';
 import { userEvent, within } from '@storybook/testing-library';
 import animal from '../../../assets/sample-category.jpg';
-import CategoryListComponent from './CategoryList';
+import CategoryGridComponent from './CategoryGrid';
 
-const meta: Meta<typeof CategoryListComponent> = {
-  title: 'Category/CategoryList',
+const meta: Meta<typeof CategoryGridComponent> = {
+  title: 'Category/CategoryGrid',
   tags: ['autodocs'],
-  component: CategoryListComponent,
+  component: CategoryGridComponent,
 };
 
 export default meta;
 
-type Story = StoryObj<typeof CategoryListComponent>;
+type Story = StoryObj<typeof CategoryGridComponent>;
 
-export const CategoryList: Story = {
+export const CategoryGrid: Story = {
   args: {
     items: [...Array(8).keys()].map((i) => ({
       id: `animal-${i}`,
