@@ -1,14 +1,15 @@
 import { useEffect, useState } from 'react';
-import { Box, Center, Heading } from '@chakra-ui/react';
 import { useTranslation } from 'react-i18next';
+import { Center, Stack, Title } from '@mantine/core';
 import { BaseLayout } from '../../../common';
 import useGetCategories from '../../useGetCategories';
-import CategoryList, { CategoryListItemProps } from '../CategoryList';
+import CategoryGrid, { CategoryGridProps } from '../CategoryGrid';
 
-export default function CategoryListPage() {
+import * as styles from './CategoryGridPage.css';
+
+export default function CategoryGridPage() {
   const { t } = useTranslation();
-  const [categories, setCategories] = useState<CategoryListItemProps[]>([]);
-  const [isChangeTitle, setIsChangeTitle] = useState(false);
+  const [categories, setCategories] = useState<CategoryGridProps['items']>([]);
   const { isLoading, data } = useGetCategories();
 
   useEffect(() => {
@@ -24,32 +25,30 @@ export default function CategoryListPage() {
     );
   }, [isLoading, data]);
 
-  const title =
-    (isChangeTitle && t('categoryList.hoverTitle')) || t('categoryList.title');
-
   return (
     <BaseLayout>
-      <Box
-        as='section'
-        padding={[6, 8, 12, 20]}
-        flex={1}
-        overflow='auto'
-        onMouseEnter={() => setIsChangeTitle(true)}
-        onMouseLeave={() => setIsChangeTitle(false)}
+      <Stack
+        component='section'
+        className={styles.container}
       >
         <Center
-          as='header'
-          marginBottom={[6, 10]}
+          component='header'
+          className={styles.header}
         >
-          <Heading fontWeight='medium'>{title}</Heading>
+          <Title
+            className={styles.title}
+            order={2}
+          >
+            {t('categoryGrid.title')}
+          </Title>
         </Center>
         {!isLoading && (
-          <CategoryList
+          <CategoryGrid
             items={categories}
             onSelectCategory={(category) => console.log(category)}
           />
         )}
-      </Box>
+      </Stack>
     </BaseLayout>
   );
 }

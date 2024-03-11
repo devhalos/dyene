@@ -1,27 +1,16 @@
-import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 import { ReactNode } from 'react';
+import { createTheme, MantineProvider } from '@mantine/core';
+import { themeToVars } from '@mantine/vanilla-extract';
+
+import '@mantine/core/styles.layer.css';
+
+export const theme = createTheme({});
+export const vars = themeToVars(theme);
 
 export type AppThemeProps = {
   children: ReactNode;
 };
 
-const theme = extendTheme({
-  styles: {
-    global: {
-      'html,body': {
-        overflow: 'hidden',
-      },
-      body: {
-        width: '100vw',
-        height: '100vh',
-      },
-      '#root': {
-        height: '100vh',
-      },
-    },
-  },
-});
-
 export default function AppTheme({ children }: AppThemeProps) {
-  return <ChakraProvider theme={theme}>{children}</ChakraProvider>;
+  return <MantineProvider theme={theme}>{children}</MantineProvider>;
 }
