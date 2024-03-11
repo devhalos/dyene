@@ -4,7 +4,7 @@ import { useDisclosure } from '@mantine/hooks';
 import { useTranslation } from 'react-i18next';
 import Logo from '../Logo';
 
-import styles from './BaseLayout.module.css';
+import * as styles from './BaseLayout.css';
 
 export type BaseLayoutProps = {
   children: ReactNode;
