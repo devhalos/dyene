@@ -2,8 +2,7 @@ import React from 'react';
 import { Container, SimpleGrid, UnstyledButton } from '@mantine/core';
 import { motion } from 'framer-motion';
 import CategoryItem, { CategoryProps } from '../CategoryItem';
-
-import styles from './CategoryGrid.module.css';
+import * as styles from './CategoryGrid.css';
 
 export type CategoryGridItemProps = CategoryProps & {
   id: string;
@@ -22,10 +21,7 @@ export default function CategoryGrid({
   onSelectCategory,
 }: CategoryGridProps) {
   return (
-    <Container
-      size='90rem'
-      className={styles.container}
-    >
+    <Container className={styles.container}>
       <SimpleGrid
         cols={{ base: 1, xs: 2, sm: 3, md: 4, lg: 5 }}
         spacing={{
@@ -34,20 +30,22 @@ export default function CategoryGrid({
         }}
       >
         {items.map((item) => (
-          <motion.div
+          <UnstyledButton
             key={item.id}
-            whileHover={{
-              scale: 1.05,
-              transition: { duration: 0.2 },
-            }}
+            renderRoot={(props) => (
+              <motion.div
+                whileHover={{
+                  scale: 1.05,
+                  transition: { duration: 0.2 },
+                }}
+                {...props}
+              />
+            )}
+            className={styles.category}
+            onClick={(e) => onSelectCategory(item, e)}
           >
-            <UnstyledButton
-              className={styles.category}
-              onClick={(e) => onSelectCategory(item, e)}
-            >
-              <CategoryItem {...item} />
-            </UnstyledButton>
-          </motion.div>
+            <CategoryItem {...item} />
+          </UnstyledButton>
         ))}
       </SimpleGrid>
     </Container>

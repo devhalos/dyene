@@ -1,11 +1,11 @@
 import { ReactNode } from 'react';
 import { createTheme, MantineProvider } from '@mantine/core';
+import { themeToVars } from '@mantine/vanilla-extract';
 
 import '@mantine/core/styles.layer.css';
 
-const theme = createTheme({
-  /** Put your mantine theme override here */
-});
+export const theme = createTheme({});
+export const vars = themeToVars(theme);
 
 export type AppThemeProps = {
   children: ReactNode;

@@ -5,7 +5,7 @@ import { BaseLayout } from '../../../common';
 import useGetCategories from '../../useGetCategories';
 import CategoryGrid, { CategoryGridProps } from '../CategoryGrid';
 
-import styles from './CategoryGridPage.module.css';
+import * as styles from './CategoryGridPage.css';
 
 export default function CategoryGridPage() {
   const { t } = useTranslation();

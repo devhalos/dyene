@@ -42,13 +42,13 @@
     "remove": "^0.1.5"
   },
   "devDependencies": {
+    "@mantine/vanilla-extract": "^7.6.1",
     "@storybook/react-vite": "^7.0.18",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
+    "@vanilla-extract/css": "^1.14.1",
+    "@vanilla-extract/vite-plugin": "^4.0.6",
     "@vitejs/plugin-react": "^4.0.0",
-    "postcss": "^8.4.35",
-    "postcss-preset-mantine": "^1.13.0",
-    "postcss-simple-vars": "^7.0.1",
     "prop-types": "^15.8.1",
     "vite": "^5.1.4"
   }

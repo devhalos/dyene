@@ -1,6 +1,5 @@
 import { Card, Image, Title } from '@mantine/core';
-
-import styles from './CategoryItem.module.css';
+import * as styles from './CategoryItem.css';
 
 export type CategoryItemProps = {
   coverImage: string;
@@ -14,13 +13,10 @@ export default function CategoryItem({
   title,
 }: CategoryItemProps) {
   return (
-    <Card
-      shadow='sm'
-      className={styles.category}
-    >
+    <Card shadow='sm'>
       <Card.Section>
         <Image
-          className={styles['cover-picture']}
+          className={styles.coverPicture}
           src={coverImage}
           alt={coverImageDesc}
         />
