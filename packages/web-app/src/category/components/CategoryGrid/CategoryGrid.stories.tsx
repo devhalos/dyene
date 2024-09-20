@@ -1,7 +1,6 @@
 import { expect, jest } from '@storybook/jest';
 import { Meta, StoryObj } from '@storybook/react';
 import { userEvent, within } from '@storybook/testing-library';
-import animal from '../../../assets/sample-category.jpg';
 import CategoryGridComponent from './CategoryGrid';
 
 const meta: Meta<typeof CategoryGridComponent> = {
@@ -19,7 +18,7 @@ export const CategoryGrid: Story = {
     items: [...Array(8).keys()].map((i) => ({
       id: `animal-${i}`,
       title: `Animal ${i}`,
-      coverImage: animal,
+      coverImage: `animal-${i}.jpg`,
       coverImageDesc: 'A wild animal',
     })),
     onSelectCategory: (category) => window.alert(category.title),

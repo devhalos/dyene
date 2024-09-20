@@ -29,6 +29,7 @@
   "dependencies": {
     "@mantine/core": "^7.6.1",
     "@mantine/hooks": "^7.6.1",
+    "@tanstack/react-query": "^5.53.1",
     "framer-motion": "^11.0.6",
     "i18next": "^23.6.0",
     "i18next-browser-languagedetector": "^7.0.1",
@@ -36,8 +37,6 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-i18next": "^14.0.5",
-    "react-icons": "^5.0.1",
-    "react-query": "^3.39.3",
     "react-router-dom": "^6.11.2",
     "remove": "^0.1.5"
   },
