@@ -2,19 +2,19 @@ import { expect } from '@storybook/jest';
 import { Meta, StoryObj } from '@storybook/react';
 import { within } from '@storybook/testing-library';
 import { appQueryDecorator } from '../../../../.storybook/decorators';
-import CategoryGridPageComponent from './CategoryGridPage';
+import CategoriesPageComponent from './CategoriesPage';
 
-const meta: Meta<typeof CategoryGridPageComponent> = {
-  title: 'Category/CategoryGridPage',
+const meta: Meta<typeof CategoriesPageComponent> = {
+  title: 'Category/CategoriesPage',
   tags: ['autodocs'],
-  component: CategoryGridPageComponent,
+  component: CategoriesPageComponent,
 };
 
 export default meta;
 
-type Story = StoryObj<typeof CategoryGridPageComponent>;
+type Story = StoryObj<typeof CategoriesPageComponent>;
 
-export const CategoryGridPage: Story = {
+export const CategoriesPage: Story = {
   decorators: [appQueryDecorator],
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
