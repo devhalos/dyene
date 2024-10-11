@@ -1,7 +1,8 @@
 import { Meta, StoryObj } from '@storybook/react';
+import { InputType } from '@storybook/csf';
 import LogoComponent from './Logo';
 
-const colorArgType = {
+const colorArgType: InputType = {
   control: 'color',
 };
 

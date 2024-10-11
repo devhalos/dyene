@@ -8,9 +8,9 @@ module.exports = {
     'eslint-config-prettier',
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
-    'plugin:import/recommended',
     'plugin:storybook/recommended',
   ],
+  plugins: ['import'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
