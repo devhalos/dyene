@@ -1,11 +1,9 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
+local_branch_name="$(git rev-parse --abbrev-ref HEAD)"
 branch_pattern="^(feat|fix)/[a-z]*-[0-9]*-[a-z0-9-]*$"
 
-npx enforce-branch-name "$branch_pattern" --ignore main
-result=$?
-
-if [ $result -eq 0 ]; then
+if [[ ! $local_branch_name =~ $branch_pattern ]]; then
     echo "branch is in correct format"
     echo ""
 else 
