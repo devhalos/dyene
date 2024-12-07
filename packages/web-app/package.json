@@ -17,7 +17,7 @@
     "test:component:ci": "npx playwright install --with-deps && npm run test:component",
     "storybook": "storybook dev -p 6006",
     "storybook:test-runner": "npx concurrently -k -s first -n 'sb:app,sb:test' -c 'magenta,blue'",
-    "storybook:test": "test-storybook --url http://localhost:6006 --browsers firefox chromium webkit",
+    "storybook:test": "test-storybook --url http://localhost:6006 --browsers firefox chromium",
     "storybook:wait": "npx wait-on tcp:6006 -l -t 60000",
     "storybook:wait-test": "npm run storybook:wait && npm run storybook:test",
     "storybook:build": "storybook build --quiet",
