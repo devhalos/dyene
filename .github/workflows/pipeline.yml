@@ -133,11 +133,8 @@ jobs:
         if: steps.cache-nodemodules.outputs.cache-hit != 'true'
         run: npm ci
 
-      - name: Install Playwright
-        run: npx playwright install --with-deps
-
       - name: Component Test
-        run: sh scripts/run-affected.sh test:component
+        run: sh scripts/run-affected.sh test:component:ci
 
   infra-lint:
     runs-on: ubuntu-latest
@@ -149,7 +146,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: npm
 
       - uses: hashicorp/setup-terraform@v2
