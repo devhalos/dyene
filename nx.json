@@ -2,19 +2,61 @@
   "extends": "nx/presets/npm.json",
   "targetDefaults": {
     "build": {
-      "dependsOn": ["^build"]
+      "cache": true,
+      "dependsOn": ["^build"],
+      "inputs": [
+        "{projectRoot}/**/*",
+        "!{projectRoot}/.storybook/**/*",
+        "!{projectRoot}/infrastructure/**/*"
+      ],
+      "outputs": ["{projectRoot}/dist"]
+    },
+    "lint": {
+      "cache": true,
+      "inputs": ["{projectRoot}/**/*", "!{projectRoot}/infrastructure/**/*"],
+      "outputs": ["{projectRoot}/dist"]
+    },
+    "lint:type": {
+      "cache": true,
+      "inputs": ["{projectRoot}/**/*", "!{projectRoot}/infrastructure/**/*"],
+      "outputs": ["{projectRoot}/dist"]
+    },
+    "test:unit": {
+      "cache": true,
+      "inputs": [
+        "{projectRoot}/**/*",
+        "!{projectRoot}/.storybook/**/*",
+        "!{projectRoot}/infrastructure/**/*"
+      ]
+    },
+    "test:component": {
+      "cache": true,
+      "inputs": ["{projectRoot}/**/*", "!{projectRoot}/infrastructure/**/*"]
+    },
+    "infra:init": {
+      "cache": true,
+      "inputs": ["{projectRoot}/infrastructure/**/*"]
     },
     "infra:workspace": {
-      "dependsOn": ["infra:init"]
+      "cache": true,
+      "dependsOn": ["infra:init"],
+      "inputs": ["{projectRoot}/infrastructure/**/*"]
     },
     "infra:diff": {
-      "dependsOn": ["build", "infra:workspace"]
+      "cache": true,
+      "dependsOn": ["build", "infra:workspace"],
+      "inputs": ["{projectRoot}/infrastructure/**/*"]
     },
     "infra:test": {
-      "dependsOn": ["infra:diff"]
+      "cache": true,
+      "dependsOn": ["infra:diff"],
+      "inputs": ["{projectRoot}/infrastructure/**/*"]
     },
     "infra:deploy": {
-      "dependsOn": ["infra:diff"]
+      "cache": true,
+      "dependsOn": ["infra:diff"],
+      "inputs": ["{projectRoot}/infrastructure/**/*"]
     }
-  }
+  },
+  "nxCloudId": "675436622235400f06c22c68"
 }
