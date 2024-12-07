@@ -15,4 +15,4 @@ fi
 
 echo "running npx nx affected -t $commands --base=$base --head=$head"
 
-npx nx affected -t $commands --base=$base --head=$head
+npx nx affected -t $commands --base=$base --head=$head --verbose
