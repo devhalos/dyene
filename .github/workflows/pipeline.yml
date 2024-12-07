@@ -153,6 +153,8 @@ jobs:
           cache: npm
 
       - uses: hashicorp/setup-terraform@v2
+        with:
+          terraform_version: "1.7.4"
 
       - name: Cache node modules
         id: cache-nodemodules

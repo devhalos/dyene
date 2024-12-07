@@ -3,7 +3,7 @@ import {
   RouterProvider,
   createBrowserRouter,
 } from 'react-router-dom';
-import { CategoryGridPage } from './category';
+import { CategoriesPage } from './category';
 
 const router = createBrowserRouter([
   {
@@ -17,7 +17,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/categories',
-    element: <CategoryGridPage />,
+    element: <CategoriesPage />,
   },
 ]);
 
