@@ -2,19 +2,31 @@
   "extends": "nx/presets/npm.json",
   "targetDefaults": {
     "build": {
-      "dependsOn": ["^build"]
+      "dependsOn": [
+        "^build"
+      ]
     },
     "infra:workspace": {
-      "dependsOn": ["infra:init"]
+      "dependsOn": [
+        "infra:init"
+      ]
     },
     "infra:diff": {
-      "dependsOn": ["build", "infra:workspace"]
+      "dependsOn": [
+        "build",
+        "infra:workspace"
+      ]
     },
     "infra:test": {
-      "dependsOn": ["infra:diff"]
+      "dependsOn": [
+        "infra:diff"
+      ]
     },
     "infra:deploy": {
-      "dependsOn": ["infra:diff"]
+      "dependsOn": [
+        "infra:diff"
+      ]
     }
-  }
+  },
+  "nxCloudId": "675436dec9736bb9074122f6"
 }
