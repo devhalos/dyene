@@ -1,7 +1,7 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { within } from '@storybook/testing-library';
 import { expect } from '@storybook/jest';
-import coverImage from '../../../assets/sample-category.jpg';
+import photoUrl from '../../../assets/sample-category.jpg';
 import CategoryItemComponent from './CategoryItem';
 
 const meta: Meta<typeof CategoryItemComponent> = {
@@ -16,22 +16,22 @@ type Story = StoryObj<typeof CategoryItemComponent>;
 
 export const CategoryItem: Story = {
   args: {
-    coverImage,
-    coverImageDesc: 'A wild cat',
-    title: 'Animal',
+    photoUrl,
+    photoDesc: 'A wild cat',
+    name: 'Animal',
   },
-  play: async ({ canvasElement, args: { coverImageDesc, title } }) => {
+  play: async ({ canvasElement, args: { photoDesc, name } }) => {
     const canvas = within(canvasElement);
 
     expect(
       canvas.getByRole('img', {
-        name: coverImageDesc,
+        name: photoDesc || '',
       }),
     ).toBeInTheDocument();
 
     expect(
       canvas.getByRole('heading', {
-        name: title,
+        name,
       }),
     ).toBeInTheDocument();
   },

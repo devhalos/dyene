@@ -1,2 +1,2 @@
 export { default } from './CategoryItem';
-export type { CategoryItemProps as CategoryProps } from './CategoryItem';
+export type { CategoryItemProps } from './CategoryItem';

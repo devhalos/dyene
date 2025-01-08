@@ -1,17 +1,13 @@
 import React from 'react';
 import { Container, SimpleGrid, UnstyledButton } from '@mantine/core';
 import { motion } from 'framer-motion';
-import CategoryItem, { CategoryProps } from '../CategoryItem';
+import CategoryItem, { CategoryItemProps } from '../CategoryItem';
 import * as styles from './CategoryGrid.css';
 
-export type CategoryGridItemProps = CategoryProps & {
-  id: string;
-};
-
 export type CategoryGridProps = {
-  items: CategoryGridItemProps[];
+  items: CategoryItemProps[];
   onSelectCategory: (
-    category: CategoryProps,
+    category: CategoryItemProps,
     event: React.MouseEvent<HTMLElement>,
   ) => void;
 };

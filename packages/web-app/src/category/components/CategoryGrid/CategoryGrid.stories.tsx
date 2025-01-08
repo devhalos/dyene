@@ -1,7 +1,7 @@
 import { expect, jest } from '@storybook/jest';
 import { Meta, StoryObj } from '@storybook/react';
 import { userEvent, within } from '@storybook/testing-library';
-import coverImage from '../../../assets/sample-category.jpg';
+import photoUrl from '../../../assets/sample-category.jpg';
 import CategoryGridComponent from './CategoryGrid';
 
 const meta: Meta<typeof CategoryGridComponent> = {
@@ -18,11 +18,11 @@ export const CategoryGrid: Story = {
   args: {
     items: [...Array(8).keys()].map((i) => ({
       id: `animal-${i}`,
-      title: `Animal ${i}`,
-      coverImage,
-      coverImageDesc: `A wild animal ${i}`,
+      name: `Animal ${i}`,
+      photoUrl,
+      photoDesc: `A wild animal ${i}`,
     })),
-    onSelectCategory: (category) => window.alert(category.title),
+    onSelectCategory: (category) => window.alert(category.name),
   },
   play: async ({ canvasElement, args: { items } }) => {
     const canvas = within(canvasElement);
@@ -32,26 +32,26 @@ export const CategoryGrid: Story = {
 
     jest.spyOn(window, 'alert').mockImplementation(() => null);
 
-    for (const { title, coverImageDesc } of items) {
+    for (const { name, photoDesc } of items) {
       expect(
         canvas.getByRole('img', {
-          name: coverImageDesc,
+          name: photoDesc || '',
         }),
       ).toBeInTheDocument();
 
       expect(
         canvas.getByRole('heading', {
-          name: title,
+          name,
         }),
       ).toBeInTheDocument();
 
       await userEvent.click(
         canvas.getByRole('button', {
-          name: new RegExp(title),
+          name: new RegExp(name),
         }),
       );
 
-      expect(window.alert).toBeCalledWith(title);
+      expect(window.alert).toBeCalledWith(name);
     }
   },
 };

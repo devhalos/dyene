@@ -1,24 +1,21 @@
 import { Card, Image, Title } from '@mantine/core';
+import { Category } from '../../../common';
 import * as styles from './CategoryItem.css';
 
-export type CategoryItemProps = {
-  coverImage: string;
-  coverImageDesc: string;
-  title: string;
-};
+export type CategoryItemProps = Category;
 
 export default function CategoryItem({
-  coverImage,
-  coverImageDesc,
-  title,
+  name,
+  photoUrl,
+  photoDesc,
 }: CategoryItemProps) {
   return (
     <Card shadow='sm'>
       <Card.Section>
         <Image
           className={styles.coverPicture}
-          src={coverImage}
-          alt={coverImageDesc}
+          src={photoUrl}
+          alt={photoDesc}
         />
       </Card.Section>
       <Card.Section>
@@ -27,7 +24,7 @@ export default function CategoryItem({
           size='h5'
           className={styles.title}
         >
-          {title}
+          {name}
         </Title>
       </Card.Section>
     </Card>

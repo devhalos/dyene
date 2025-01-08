@@ -4,6 +4,7 @@ import {
   createBrowserRouter,
 } from 'react-router-dom';
 import { CategoriesPage } from './category';
+import { NameGeneratorPage } from './name';
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: '/categories',
     element: <CategoriesPage />,
+  },
+  {
+    path: '/name/generate',
+    element: <NameGeneratorPage />,
   },
 ]);
 
